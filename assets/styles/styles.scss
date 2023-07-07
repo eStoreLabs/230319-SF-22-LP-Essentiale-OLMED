@@ -1,0 +1,39 @@
+
+#es-rc #es-rc-content {
+    
+    .es-navbar {
+        background-color: #FFF;
+    }
+
+    .es-kv {
+        &__Ctn {
+           background-image: url("../images/kv-bg-desktop.png");
+        background-position: top;
+        background-size: cover; 
+        height: 600px;
+        position: relative;
+        }
+        &__overlay {
+            position: absolute;
+            background-image: url("../images/kv-bg-overlay.png");
+            height: 400px;
+            max-width: 50%;
+            background-size: cover;
+            top: 20%;
+            left: 20%;
+        }
+    }
+    
+    .es-quiz {
+        height: 200px;
+        background-color: red;
+    }
+    .es-info {
+        height: 200px;
+        background-color: yellow;
+    }
+    .es-signals {
+        height: 200px;
+        background-color: orange;
+    }
+}
