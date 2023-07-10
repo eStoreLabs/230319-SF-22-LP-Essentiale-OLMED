@@ -1,21 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
+body {
+  margin: 0;
+}
+
+#es-rc #es-rc-content {
+  font-size: 100%;
+  max-width: 790px;
+  margin: auto;
+}
+#es-rc #es-rc-content .es-mobile-hidden {
+  display: none;
+}
+#es-rc #es-rc-content .es-sup {
+  font-size: 0.4em !important;
+  top: -1.5em !important;
+}
 #es-rc #es-rc-content .es-navbar {
-  background-color: #FFF;
+  background-color: transparent;
+  position: fixed !important;
+  z-index: 1;
+  font-family: "Oswald", sans-serif !important;
+}
+#es-rc #es-rc-content .navbar-toggler {
+  border: none !important;
+}
+#es-rc #es-rc-content .navbar-toggler-icon {
+  background-image: url("../images/nav-burger.png") !important;
+  width: 30px !important;
+  height: 28px !important;
+}
+#es-rc #es-rc-content .navbar-collapse {
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100svw;
+  height: 100svh;
+}
+#es-rc #es-rc-content .nav-link {
+  color: #FFF !important;
+  font-size: 2.4rem !important;
+}
+#es-rc #es-rc-content .navbar-nav {
+  text-align: center;
+  gap: 3rem;
+}
+@media (min-width: 640px) {
+  #es-rc #es-rc-content .navbar-collapse {
+    height: unset;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .navbar-collapse {
+    width: unset;
+    height: unset;
+    background-image: none;
+  }
+  #es-rc #es-rc-content .es-navbar {
+    position: static !important;
+  }
+  #es-rc #es-rc-content .nav-link {
+    color: #000 !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+  }
+  #es-rc #es-rc-content .es-navbar-container {
+    width: unset !important;
+  }
+  #es-rc #es-rc-content .navbar-nav .nav-link.active {
+    color: #e85400 !important;
+    border-bottom: 4px solid #e85400;
+  }
+}
+@media (min-width: 900px) {
+  #es-rc #es-rc-content .navbar-collapse {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 #es-rc #es-rc-content .es-kv__Ctn {
-  background-image: url("../images/kv-bg-desktop.png");
+  background-image: url("../images/kv-bg-mobile.png");
   background-position: top;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 600px;
   position: relative;
 }
 #es-rc #es-rc-content .es-kv__overlay {
   position: absolute;
-  background-image: url("../images/kv-bg-overlay.png");
-  height: 400px;
-  max-width: 50%;
+  background-image: url("../images/kv-bg-overlay-clean.png");
   background-size: cover;
-  top: 20%;
-  left: 20%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-width: 55%;
+  min-height: 230px;
+  bottom: -10%;
+  left: 5%;
+  padding: 1rem;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+}
+#es-rc #es-rc-content .es-kv__overlay::after {
+  content: "";
+  position: absolute;
+  max-width: 80%;
+  background-image: url("../images/watroba.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -20%;
+}
+#es-rc #es-rc-content .es-kv__title {
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+@media (min-width: 470px) {
+  #es-rc #es-rc-content .es-kv__overlay {
+    bottom: -20%;
+    left: 10%;
+    max-width: 40%;
+  }
+}
+@media (min-width: 550px) {
+  #es-rc #es-rc-content .es-kv__overlay {
+    bottom: -30%;
+  }
+}
+@media (min-width: 596px) {
+  #es-rc #es-rc-content .es-mobile-hidden--kv {
+    display: block;
+  }
+  #es-rc #es-rc-content .es-kv__Ctn {
+    background-image: url("../images/kv-bg-desktop.png");
+    background-size: cover;
+  }
+  #es-rc #es-rc-content .es-kv__overlay {
+    min-height: 320px;
+    left: 15%;
+  }
+  #es-rc #es-rc-content .es-kv__overlay::after {
+    width: 100%;
+    height: 120px;
+    bottom: -25%;
+  }
+}
+@media (min-width: 620px) {
+  #es-rc #es-rc-content .es-kv__overlay {
+    bottom: -20%;
+    left: 9%;
+    max-width: 367px;
+    height: 360px;
+  }
+  #es-rc #es-rc-content .es-kv__overlay::after {
+    height: 160px;
+    bottom: -12%;
+  }
+  #es-rc #es-rc-content .es-kv__title {
+    font-size: 2.2rem;
+  }
+  #es-rc #es-rc-content .es-kv__txt {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    max-width: 90%;
+  }
 }
 #es-rc #es-rc-content .es-quiz {
   height: 200px;

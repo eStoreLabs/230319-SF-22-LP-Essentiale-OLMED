@@ -331,6 +331,7 @@ a > #es-rc #es-rc-content [data-es-rc] code {
 #es-rc #es-rc-content [data-es-rc] [type=reset],
 #es-rc #es-rc-content [data-es-rc] [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 #es-rc #es-rc-content [data-es-rc] button:not(:disabled),
 #es-rc #es-rc-content [data-es-rc] [type=button]:not(:disabled),
@@ -377,9 +378,11 @@ a > #es-rc #es-rc-content [data-es-rc] code {
 #es-rc #es-rc-content [data-es-rc] [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 #es-rc #es-rc-content [data-es-rc] ::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 #es-rc #es-rc-content [data-es-rc] ::-webkit-color-swatch-wrapper {
   padding: 0;
@@ -391,6 +394,7 @@ a > #es-rc #es-rc-content [data-es-rc] code {
 #es-rc #es-rc-content [data-es-rc] ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 #es-rc #es-rc-content [data-es-rc] output {
   display: inline-block;
@@ -3312,14 +3316,15 @@ a > #es-rc #es-rc-content [data-es-rc] code {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  background-color: red!important;
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-toggler {
   padding: var(--es-rc-navbar-toggler-padding-y) var(--es-rc-navbar-toggler-padding-x);
   font-size: var(--es-rc-navbar-toggler-font-size);
   line-height: 1;
-  color: var(--es-rc-navbar-color);
+  color: #FFF;
   background-color: transparent;
-  border: var(--es-rc-border-width) solid var(--es-rc-navbar-toggler-border-color);
+  /* border: var(--es-rc-border-width) solid var(--es-rc-navbar-toggler-border-color); */
   border-radius: var(--es-rc-navbar-toggler-border-radius);
   transition: var(--es-rc-navbar-toggler-transition);
 }
@@ -3341,7 +3346,7 @@ a > #es-rc #es-rc-content [data-es-rc] code {
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
-  background-image: var(--es-rc-navbar-toggler-icon-bg);
+  background-image: url(../../assets/images/nav-burger.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
