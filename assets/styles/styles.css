@@ -8,25 +8,27 @@ body {
 /******************************************************************/
 /************************* MAIN STYLES ****************************/
 /******************************************************************/
-#es-rc #es-rc-content .es-line {
-  border-top: 3px solid #e85400;
-  opacity: 1;
-  width: 100px;
-  margin: auto;
-}
-
 #es-rc #es-rc-content [data-es-rc] {
   font-size: 100%;
   max-width: 790px;
   margin: auto;
   font-family: "Oswald", sans-serif;
-  /* cross sell slider, remove styles start */
+  /* cross sell slider, remove styles START */
+  /* cross sell slider, remove styles END */
 }
 #es-rc #es-rc-content [data-es-rc] .es-line {
-  border-top: 3px solid #e85400;
+  border-top: 3px solid #f29602;
   opacity: 1;
-  width: 100px;
+  width: 70px;
   margin: auto;
+}
+@media (min-width: 600px) {
+  #es-rc #es-rc-content [data-es-rc] .es-line {
+    border-top: 3px solid #e85400;
+    opacity: 1;
+    width: 100px;
+    margin: auto;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-mobile-hidden {
   display: none;
@@ -219,6 +221,9 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+#es-rc #es-rc-content [data-es-rc] .es-cross__slide .es-line {
+  margin-block: 0.7rem;
+}
 #es-rc #es-rc-content [data-es-rc] .es-cross__productName {
   font-weight: 700;
   font-size: 1rem;
@@ -239,10 +244,15 @@ body {
   text-align: center;
   width: 120px;
   margin: auto;
+  font-style: italic;
+  font-weight: 700;
 }
 @media (min-width: 600px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__productName {
     font-size: 1.5rem;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-cross__productDesc {
+    font-size: 1rem;
   }
   #es-rc #es-rc-content [data-es-rc] .es-cross__packshot {
     max-height: 230px;
