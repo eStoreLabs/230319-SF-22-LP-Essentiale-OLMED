@@ -5,36 +5,41 @@ body {
 }
 
 $-es-color--orange: #e85400;
-
 #es-rc #es-rc-content {
+    .es-line {
+        border-top: 3px solid $-es-color--orange;
+        opacity: 1;
+        width: 100px;
+        margin: auto;
+    }
+}
+#es-rc #es-rc-content [data-es-rc] {
     font-size: 100%;
     max-width: 790px;
     margin: auto;
-
+    font-family: 'Oswald', sans-serif;
     .es-mobile-hidden {
         display: none;
     }
 
     .es-sup {
-        font-size: 0.4em !important;
-        top: -1.5em !important;
+        font-size: 0.4em;
+        top: -1.5em;
     }
-
     .es-navbar {
         background-color: transparent;
-        position: fixed !important;
+        position: fixed;
         z-index: 1;
-        font-family: 'Oswald', sans-serif !important;
     }
 
     .navbar-toggler {
-        border: none !important;
+        border: none;
     }
 
     .navbar-toggler-icon {
-        background-image: url("../images/nav-burger.png") !important;
-        width: 30px !important;
-        height: 28px !important;
+        background-image: url("../images/nav-burger.png");
+        width: 30px;
+        height: 28px;
     }
 
     .navbar-collapse {
@@ -44,11 +49,13 @@ $-es-color--orange: #e85400;
         background-size: cover;
         width: 100svw;
         height: 100svh;
+        display: grid;
+        place-content: center;
     }
 
     .nav-link {
-        color: #FFF !important;
-        font-size: 2.4rem !important;
+        color: #FFF;
+        font-size: 2rem;
     }
 
     .navbar-nav {
@@ -70,22 +77,17 @@ $-es-color--orange: #e85400;
         }
 
         .es-navbar {
-            position: static !important;
+            position: static;
         }
 
         .nav-link {
-            color: #000 !important;
-            font-size: 1.1rem !important;
-            font-weight: 700 !important;
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 700;
         }
 
         .es-navbar-container {
-            width: unset !important;
-        }
-
-        .navbar-nav .nav-link.active {
-            color: $-es-color--orange !important;
-            border-bottom: 4px solid $-es-color--orange;
+            width: unset;
         }
     }
 
@@ -101,7 +103,7 @@ $-es-color--orange: #e85400;
             background-position: top;
             background-size: contain;
             background-repeat: no-repeat;
-            height: 600px;
+            min-height: 370px;
             position: relative;
         }
 
@@ -111,9 +113,11 @@ $-es-color--orange: #e85400;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
-            max-width: 55%;
+            min-width: 200px;
+            width: 45%;
+            max-width: 300px;
             min-height: 230px;
-            bottom: -10%;
+            transform: translate(0, 36%);
             left: 5%;
             padding: 1rem;
             position: relative;
@@ -138,47 +142,41 @@ $-es-color--orange: #e85400;
 
         &__title {
             color: #FFF;
-            font-family: "Oswald", sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             font-size: 2rem;
             line-height: 1.2;
         }
-    }
-
-    @media (min-width: 470px) {
-        .es-kv {
-            &__overlay {
-                bottom: -20%;
-                left: 10%;
-                max-width: 40%;
+        &__txt {
+            font-size: 1.1rem;
+            line-height: 1.1;
+            max-width: 90%;
+            &--mobile {
+                font-weight: 700;
+                text-align: center;
+                padding: 1rem;
+                margin: auto;
             }
         }
-    }
 
-    @media (min-width: 550px) {
-        .es-kv {
-            &__overlay {
-                bottom: -30%;
-            }
-        }
     }
-
     @media (min-width: 596px) {
         .es-mobile-hidden--kv {
             display: block;
         }
-
+        .es-desktop-hidden--kv {
+            display: none;
+        }
         .es-kv {
             &__Ctn {
                 background-image: url("../images/kv-bg-desktop.png");
                 background-size: cover;
+                min-height: 500px;
             }
 
             &__overlay {
                 min-height: 320px;
-                left: 15%;
-
+                transform: translate(8%, 15%);
                 &::after {
                     width: 100%;
                     height: 120px;
@@ -190,26 +188,21 @@ $-es-color--orange: #e85400;
 
     @media (min-width: 620px) {
         .es-kv {
+            &__Ctn {
+                min-height: 520px;
+            }
             &__overlay {
-                bottom: -20%;
-                left: 9%;
+
                 max-width: 367px;
-                height: 360px;
+                height: 370px;
 
                 &::after {
-                    height: 160px;
-                    bottom: -12%;
+                    bottom: -23%;
+                    height: 140px;
                 }
             }
-
             &__title {
                 font-size: 2.2rem;
-            }
-
-            &__txt {
-                font-size: 1.1rem;
-                line-height: 1.1;
-                max-width: 90%;
             }
         }
     }
