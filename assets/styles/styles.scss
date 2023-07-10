@@ -4,7 +4,28 @@ body {
     margin: 0;
 }
 
+/* variables */
 $-es-color--orange: #e85400;
+/* mixins */
+@mixin es-section-header {
+    font-family: "Oswald", sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 1rem;
+}
+@mixin es-button {
+    background-color: $-es-color--orange;
+    color: #FFF;
+    padding: 0.3rem;
+    display: block;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+}
+/******************************************************************/
+/************************* MAIN STYLES ****************************/
+/******************************************************************/
 #es-rc #es-rc-content {
     .es-line {
         border-top: 3px solid $-es-color--orange;
@@ -18,6 +39,12 @@ $-es-color--orange: #e85400;
     max-width: 790px;
     margin: auto;
     font-family: 'Oswald', sans-serif;
+    .es-line {
+        border-top: 3px solid $-es-color--orange;
+        opacity: 1;
+        width: 100px;
+        margin: auto;
+    }
     .es-mobile-hidden {
         display: none;
     }
@@ -26,6 +53,7 @@ $-es-color--orange: #e85400;
         font-size: 0.4em;
         top: -1.5em;
     }
+
     .es-navbar {
         background-color: transparent;
         position: fixed;
@@ -206,19 +234,63 @@ $-es-color--orange: #e85400;
             }
         }
     }
-
-    .es-quiz {
-        height: 200px;
-        background-color: red;
+    /* cross sell slider, remove styles start */
+.es-cross {
+    &__header {
+        @include es-section-header;
+    }
+    & .carousel {
+        padding-block: 1rem;
+        width: 90%;
+        margin: auto;
+    }
+    & .carousel-inner {
+        width: 50%;
+        margin: auto;
+    }
+    & .carousel-control-prev-icon {
+        background-image: url("../images/slider-btn.png");
+    }
+    & .carousel-control-next-icon {
+        background-image: url("../images/slider-btn.png");
+        transform: rotate(180deg);
+    }
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
 
-    .es-info {
-        height: 200px;
-        background-color: yellow;
+    &__productName {
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0;
     }
-
-    .es-signals {
-        height: 200px;
-        background-color: orange;
+    &__productDesc {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__btn {
+        @include es-button;
     }
 }
+@media (min-width: 600px) {
+.es-cross {
+    &__productName {
+        font-size: 1.5rem;
+    }
+    &__packshot {
+        max-height: 230px;
+    }
+    .es-line {
+        margin-top: 50px;
+    }
+}
+
+}
+}
+
