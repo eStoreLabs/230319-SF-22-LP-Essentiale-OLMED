@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@400;500;700&display=swap');
 
 body {
     margin: 0;
+    
 }
 
 /* variables */
 $es-color--orange: #e85400;
 $es-color--orange--lighter: #f29602;
+$es-color--gray: #ebebeb;
 
 /* mixins */
 @mixin es-section-header {
@@ -37,7 +39,8 @@ $es-color--orange--lighter: #f29602;
     max-width: 790px;
     margin: auto;
     font-family: 'Oswald', sans-serif;
-
+    overflow-x: hidden;
+    // width: 100%;
     .es-line {
         border-top: 3px solid $es-color--orange--lighter;
         opacity: 1;
@@ -62,7 +65,12 @@ $es-color--orange--lighter: #f29602;
         font-size: 0.4em;
         top: -1.5em;
     }
-
+    @media (min-width: 400px) {
+        .es-sup {
+            font-size: 0.6em;
+    top: -1em;
+        }
+    }
     .es-navbar {
         background-color: transparent;
         position: fixed;
@@ -332,4 +340,32 @@ $es-color--orange--lighter: #f29602;
     }
 
     /* cross sell slider, remove styles END */
+    .es-features {
+background-color: $es-color--gray;
+&__title {
+    @include es-section-header;
+}
+&__imgCtn {
+    overflow: hidden;
+}
+&__img {
+     scale: 1.6;
+    padding-block: 2.5rem;
+}
+&__subtitle {
+    @include es-section-header;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+&__txt {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+}
+    }
 }
