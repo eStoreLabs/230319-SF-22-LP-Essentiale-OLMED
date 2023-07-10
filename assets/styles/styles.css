@@ -251,8 +251,14 @@ body {
   text-align: center;
   width: 120px;
   margin: auto;
+  transition: all 300ms ease-in-out;
   font-style: italic;
   font-weight: 700;
+}
+#es-rc #es-rc-content [data-es-rc] .es-cross__btn:hover {
+  background-color: #FFF;
+  outline: 3px solid #e85400;
+  color: #e85400;
 }
 @media (min-width: 600px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__productName {
