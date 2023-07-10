@@ -303,4 +303,24 @@ body {
   text-align: center;
   max-width: 85%;
   margin: auto;
+  line-height: 1.3;
+}
+@media (min-width: 440px) {
+  #es-rc #es-rc-content [data-es-rc] .es-features__img {
+    scale: 1.5;
+  }
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-features__Ctn {
+    background-image: url("../images/info-watroba.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-features__title {
+    padding-inline: 6rem;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-features__txt {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
