@@ -1,0 +1,48 @@
+/* variables */
+$es-color--orange: #e85400;
+$es-color--orange--lighter: #f29602;
+$es-color--gray: #ebebeb;
+
+/* mixins */
+@mixin es-section-header {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+@mixin es-button {
+    background-color: $es-color--orange;
+    color: #FFF;
+    padding: 0.3rem;
+    display: block;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        background-color: #FFF;
+        outline: 3px solid $es-color--orange;
+        color: $es-color--orange;
+    }
+}
+@mixin es-button--quiz($btn-color) {
+    background-color: $btn-color;
+    color: #FFF;
+    padding: 0.4rem;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.3rem;
+    width: 170px;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        background-color: #FFF;
+        outline: 3px solid $btn-color;
+        color: $btn-color;
+    }
+}

@@ -1,43 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@400;500;700&display=swap');
+@import "utilities";
 
 body {
     margin: 0;
 
 }
 
-/* variables */
-$es-color--orange: #e85400;
-$es-color--orange--lighter: #f29602;
-$es-color--gray: #ebebeb;
 
-/* mixins */
-@mixin es-section-header {
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
 
-@mixin es-button {
-    background-color: $es-color--orange;
-    color: #FFF;
-    padding: 0.3rem;
-    display: block;
-    text-align: center;
-    width: 120px;
-    margin: auto;
-    transition: all 300ms ease-in-out;
-    &:hover {
-       background-color: #FFF;
-    outline: 3px solid $es-color--orange; 
-    color: $es-color--orange;
-    }
-}
-
-@mixin es-button--hover {
-    
-}
 
 /******************************************************************/
 /************************* MAIN STYLES ****************************/
@@ -277,6 +247,7 @@ $es-color--gray: #ebebeb;
     .es-cross {
         &__header {
             @include es-section-header;
+            padding-inline: 4rem;
         }
 
         & .carousel {
@@ -329,11 +300,16 @@ $es-color--gray: #ebebeb;
             @include es-button;
             font-style: italic;
             font-weight: 700;
+            font-size: 1.2rem;
         }
     }
 
     @media (min-width: 600px) {
         .es-cross {
+            &__header {
+                padding-inline: unset;
+            }
+
             &__productName {
                 font-size: 1.5rem;
             }
@@ -353,8 +329,10 @@ $es-color--gray: #ebebeb;
     }
 
     /* cross sell slider, remove styles END */
+
     .es-features {
         background-color: $es-color--gray;
+
         &__title {
             @include es-section-header;
         }
@@ -374,6 +352,7 @@ $es-color--gray: #ebebeb;
             font-weight: 500;
             margin-bottom: 0;
             margin-top: 1rem;
+            font-size: 1.3rem;
         }
 
         &__txt {
@@ -386,6 +365,7 @@ $es-color--gray: #ebebeb;
             line-height: 1.3;
         }
     }
+
     @media (min-width: 440px) {
         .es-features {
             &__img {
@@ -393,6 +373,7 @@ $es-color--gray: #ebebeb;
             }
         }
     }
+
     @media (min-width: 576px) {
         .es-features {
             &__Ctn {
@@ -401,13 +382,125 @@ $es-color--gray: #ebebeb;
                 background-repeat: no-repeat;
                 background-position: center;
             }
+
             &__title {
-               padding-inline: 6rem;
-                
+                padding-inline: 6rem;
+
             }
+
             &__txt {
                 font-size: 0.8rem;
             }
+        }
+    }
+
+    .es-quiz {
+        background: linear-gradient(180deg, rgba(235, 235, 235, 1) 50%, rgba(255, 255, 255, 1) 50%);
+
+        &__circle {
+            background-color: $es-color--orange;
+            color: white;
+            font-size: 2.8rem;
+            font-weight: 700;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            display: grid;
+            place-items: center;
+            position: relative;
+            z-index: 1;
+
+            &:after {
+                content: "?";
+                color: #4e2a21;
+                font-size: 12rem;
+                position: absolute;
+                z-index: -2;
+                transform: rotate(5.5deg) translateY(-0.5rem);
+                line-height: 1;
+                opacity: 0.3;
+            }
+        }
+
+        &__title {
+            @include es-section-header;
+        }
+
+        &__Ctn {
+            background-image: url("../images/bg-quiz-mobile.png");
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+
+            &:after {
+                content: "";
+                background-image: url("../images/watroba.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                transform: translate(-50%);
+                left: 50%;
+                bottom: -6%;
+                width: 200px;
+                height: 100px;
+            }
+        }
+
+        &__slide-title {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #FFF;
+        }
+
+        &__question--number {
+            font-weight: 700;
+            font-size: 2.7rem;
+            color: $es-color--orange--lighter;
+            background-color: #FFF;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            display: grid;
+            place-items: center;
+            margin: 0;
+        }
+
+        &__question--txt {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        &__btn--fact {
+            @include es-button--quiz($es-color--orange);
+        }
+
+        &__btn--myth {
+            @include es-button--quiz(#000);
+        }
+
+        &__question--buttonsCtn {
+            position: relative;
+
+        }
+
+        &__question-mark {
+            position: absolute;
+            color: #FFF;
+            font-size: 5rem;
+            font-weight: 700;
+            transform: translate(0%, -50%) rotate(5deg);
+            left: 75%;
+            top: 50%;
+        }
+
+        &__question--footer {
+            color: #FFF;
+            font-weight: 700;
+            font-size: 1.3rem;
+            height: 100px;
         }
     }
 }
