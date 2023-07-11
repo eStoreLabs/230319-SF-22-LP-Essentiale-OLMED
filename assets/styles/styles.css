@@ -25,7 +25,7 @@ body {
   width: 70px;
   margin: auto;
 }
-@media (min-width: 600px) {
+@media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-line {
     border-top: 3px solid #e85400;
     opacity: 1;
@@ -561,5 +561,77 @@ body {
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz .carousel-inner {
     width: 80%;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-info__title {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-info__title {
+    font-size: 1.7rem;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-info__subtitle {
+  color: #f29602;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-block: 1.5rem;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-info__subtitle {
+    color: #e85400;
+    margin-top: 0.7rem;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-info__maintxt {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-info__maintxt--bold {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 700;
+}
+#es-rc #es-rc-content [data-es-rc] .es-info .carousel-inner {
+  max-width: 70%;
+  height: 150px;
+  outline: 1px solid blue;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-info .carousel-inner {
+    height: unset;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-info__sliderTitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-info__sliderTitle {
+    font-size: 1.7rem;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-info__sliderTxt {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-info__sliderTxt {
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

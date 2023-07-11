@@ -29,7 +29,7 @@ body {
         margin: auto;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 576px) {
         .es-line {
             border-top: 3px solid $es-color--orange;
             opacity: 1;
@@ -553,6 +553,63 @@ body {
                 width: 80%;
             }
 
+        }
+    }
+    .es-info {
+        &__title {
+            @include es-section-header;
+            margin-top: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        &__subtitle {
+            color: $es-color--orange--lighter;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+            margin-block: 1.5rem;
+            @media(min-width: 576px) {
+                color: $es-color--orange;
+                margin-top: 0.7rem;
+            }
+        }
+        &__maintxt {
+            font-family: "Noto Sans", sans-serif;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 2.5rem;
+            &--bold {
+                font-family: "Noto Sans", sans-serif;
+            text-align: center;
+            line-height: 1.2;
+            font-weight: 700;
+            }
+        }
+        .carousel-inner {
+            max-width: 70%;
+            height: 150px;
+            outline: 1px solid blue;
+            @media (min-width: 576px) {
+                height: unset;
+            }
+        }
+        &__sliderTitle {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.4rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            @media (min-width: 576px) {
+                font-size: 1.7rem;
+            }
+        }
+        &__sliderTxt {
+            font-family: "Noto Sans", sans-serif;
+            text-align: center;
+            margin-top: 1.5rem;
+            line-height: 1.2;
+            @media (min-width: 576px) {
+                font-size: 1.1rem;
+            }
         }
     }
 }
