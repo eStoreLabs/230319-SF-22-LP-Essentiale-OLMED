@@ -53,6 +53,7 @@ body {
             top: -1em;
         }
     }
+
     /* navbar styles */
 
     .es-navbar {
@@ -126,15 +127,16 @@ body {
         }
     }
 
-    /* slider buttons */ 
-     .carousel-control-prev-icon {
+    /* slider buttons */
+    .carousel-control-prev-icon {
         background-image: url("../images/slider-btn.png");
     }
 
-     .carousel-control-next-icon {
+    .carousel-control-next-icon {
         background-image: url("../images/slider-btn.png");
         transform: rotate(180deg);
     }
+
     .es-kv {
         &__Ctn {
             background-image: url("../images/kv-bg-mobile.png");
@@ -419,11 +421,13 @@ body {
             place-items: center;
             position: relative;
             z-index: 1;
+
             @media (min-width: 576px) {
                 font-size: 3.6rem;
                 width: 150px;
-            height: 150px;
+                height: 150px;
             }
+
             &:after {
                 content: "?";
                 color: #4e2a21;
@@ -433,6 +437,7 @@ body {
                 transform: rotate(5.5deg) translateY(-0.5rem);
                 line-height: 1;
                 opacity: 0.3;
+
                 @media (min-width: 576px) {
                     font-size: 13rem;
                 }
@@ -450,6 +455,7 @@ body {
             background-size: 100% 100%;
             background-repeat: no-repeat;
             position: relative;
+
             @media (min-width: 576px) {
                 background-image: url("../images/bg-quiz-desktop.png");
             }
@@ -466,6 +472,7 @@ body {
                 bottom: -6%;
                 width: 200px;
                 height: 100px;
+
                 @media (min-width: 576px) {
                     bottom: -9%;
                 }
@@ -477,6 +484,7 @@ body {
             font-weight: 700;
             font-size: 1rem;
             color: #FFF;
+
             @media (min-width: 576px) {
                 margin-top: 2rem;
                 font-size: 1.1rem;
@@ -494,6 +502,7 @@ body {
             display: grid;
             place-items: center;
             margin: 0;
+
             @media (min-width: 576px) {
                 font-size: 2.2rem;
                 width: 55px;
@@ -504,6 +513,7 @@ body {
         &__question--txt {
             font-size: 1.3rem;
             font-weight: 700;
+
             @media (min-width: 576px) {
                 font-size: 2.3rem;
             }
@@ -530,6 +540,7 @@ body {
             transform: translate(0%, -50%) rotate(5deg);
             left: 75%;
             top: 50%;
+
             @media (min-width: 576px) {
                 transform: translate(-50%, -50%) rotate(5deg);
                 left: 50%;
@@ -542,11 +553,13 @@ body {
             font-weight: 700;
             font-size: 1.3rem;
             height: 100px;
+
             @media (min-width: 576px) {
                 font-size: 1.1rem;
             }
         }
     }
+
     @media (min-width: 576px) {
         .es-quiz {
             .carousel-inner {
@@ -555,61 +568,149 @@ body {
 
         }
     }
+
     .es-info {
         &__title {
             @include es-section-header;
             margin-top: 1.5rem;
             padding-bottom: 0.5rem;
         }
+
         &__subtitle {
             color: $es-color--orange--lighter;
             font-size: 1.1rem;
             font-weight: 700;
             text-align: center;
             margin-block: 1.5rem;
+
             @media(min-width: 576px) {
                 color: $es-color--orange;
                 margin-top: 0.7rem;
             }
         }
+
         &__maintxt {
             font-family: "Noto Sans", sans-serif;
             text-align: center;
             line-height: 1.2;
             margin-bottom: 2.5rem;
+
+            @media (min-width: 576px) {
+                text-align: left;
+            }
+
             &--bold {
                 font-family: "Noto Sans", sans-serif;
-            text-align: center;
-            line-height: 1.2;
-            font-weight: 700;
+                text-align: center;
+                line-height: 1.2;
+                font-weight: 700;
+
+                @media (min-width: 576px) {
+                    text-align: left;
+                }
             }
         }
+
         .carousel-inner {
             max-width: 70%;
             height: 150px;
-            outline: 1px solid blue;
+
             @media (min-width: 576px) {
                 height: unset;
             }
         }
+
         &__sliderTitle {
             text-transform: uppercase;
             font-weight: 700;
             font-size: 1.4rem;
             text-align: center;
             margin-bottom: 1rem;
+
             @media (min-width: 576px) {
                 font-size: 1.7rem;
             }
         }
+
         &__sliderTxt {
             font-family: "Noto Sans", sans-serif;
             text-align: center;
             margin-top: 1.5rem;
             line-height: 1.2;
+
             @media (min-width: 576px) {
                 font-size: 1.1rem;
             }
+        }
+    }
+
+    .es-signals {
+
+        &__overlay {
+            margin-top: -83px !important;
+            position: relative;
+            font-family: "Noto Sans", sans-serif;
+            line-height: 1.3;
+            color: #FFF;
+            @media (min-width: 576px) {
+                width: 57%;
+                position: absolute;
+                margin-top: unset!important;
+                transform: translate(-50%, -50%);
+                left: 28%;
+                top: 50%;
+            }
+            &--upperCtn {
+                background-color: $es-color--red;
+                @media (min-width: 576px) {
+                    background-image: url("../images/bg.png");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    
+                }
+            }
+
+            &--lowerCtn {
+                background-image: url("../images/bg.png");
+                @media (min-width: 576px) {
+                    background-image: unset;
+                    background-color: $es-color--red;
+                    text-align: left;
+                }
+            }
+        }
+
+        &__title {
+            color: #FFF;
+            font-family: "Oswald", sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            @media (min-width: 576px) {
+                text-align: left;
+                margin-inline: unset;
+                padding-inline: unset;
+                font-size: 1.4rem;
+            }
+        }
+        &__mainTxt {
+            @media (min-width: 576px) {
+                text-align: left;
+                font-size: 0.8rem;
+            }
+        }
+        &__iconTxt {
+            @media (min-width: 576px) {
+                
+                font-size: 0.8rem;
+            }
+        }
+        @media (min-width: 576px) {
+            position: relative;
+            margin-block: 20px;
+        }
+        @media (min-width: 660px) {
+            margin-block: 80px;
         }
     }
 }
