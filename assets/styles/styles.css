@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@400;500;700&display=swap"); /* variables */
 /* mixins */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /******************************************************************/
@@ -13,6 +18,7 @@ body {
   margin: auto;
   font-family: "Oswald", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   /* some utility classes */
   /* text selection color */
   /* navbar styles */
@@ -82,6 +88,11 @@ body {
 #es-rc #es-rc-content [data-es-rc] .nav-link {
   color: #FFF;
   font-size: 2rem;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-link:hover {
+  color: #e85400;
+  border-bottom: 4px solid #e85400;
+  margin-bottom: -4px;
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-nav {
   text-align: center;
