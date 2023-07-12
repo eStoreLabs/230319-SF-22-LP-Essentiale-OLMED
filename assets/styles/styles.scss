@@ -565,15 +565,23 @@ scroll-behavior: smooth;
 
         &__btn--fact {
             @include es-button--quiz($es-color--orange);
+            z-index: 1;
         }
 
         &__btn--myth {
             @include es-button--quiz(#000);
+            z-index: 1;
         }
-
+        &__btn--line {
+            position: absolute;
+            top: 50%;
+            width: 80%;
+            height: 8px;
+            z-index: 0;
+        }
         &__question--buttonsCtn {
             position: relative;
-
+            z-index: 1;
         }
 
         &__question-mark {
@@ -584,7 +592,7 @@ scroll-behavior: smooth;
             transform: translate(0%, -50%) rotate(5deg);
             left: 75%;
             top: 50%;
-
+            z-index: 1;
             @media (min-width: 576px) {
                 transform: translate(-50%, -50%) rotate(5deg);
                 left: 50%;

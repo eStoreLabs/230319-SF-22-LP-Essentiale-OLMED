@@ -200,10 +200,11 @@
                                 </div>
                                 <div class="es-quiz__question--answers">
                                     <div
-                                        class="es-quiz__question--buttonsCtn d-flex flex-column align-items-center flex-sm-row justify-content-around">
+                                        class="es-quiz__question--buttonsCtn d-flex flex-column align-items-center flex-sm-row justify-content-around gap-3">
                                         <p class="es-quiz__btn--fact" id="Q1-fact">FAKT</p>
                                         <p class="es-quiz__btn--myth" id="Q1-myth">MIT</p>
                                         <p class="es-quiz__question-mark">?</p>
+                                        <div class="es-quiz__btn--line"></div>
                                     </div>
                                     <p class="es-quiz__question--footer text-center">wybierz odpowiedź</p>
                                 </div>
@@ -899,6 +900,30 @@
         </div>
     </div>
     <script src="./dist/js/esstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+        // quiz behavior //
+        
+        // useful
+        let answer = document.getElementsByClassName("es-quiz__slide-title");
+        let answerTxt = document.getElementsByClassName("es-quiz__question--footer");
+        let questionMark = document.getElementsByClassName("es-quiz__question-mark");
+        let line = document.getElementsByClassName("es-quiz__btn--line");
+
+        // question 1 //
+        let A1correct = document.getElementById("Q1-fact");
+        let A1false = document.getElementById("Q1-myth");
+
+        A1correct.addEventListener("click", function() {
+            answer[0].innerHTML = "dobra odpowiedź!";
+            questionMark[0].style = "display: none";
+            line[0].style = "background-color: #e85400";
+            A1false.style = "display:none";
+
+            answerTxt[0].innerHTML = "Aby boleć, wątroba musiałaby posiadać nerwy czuciowe, których nie ma. Zawiera je jednak otaczająca ją warstwa tkanki. Uczucie ucisku w okolicach wątroby pojawia się wtedy, gdy - powiększona w wyniku choroby - napiera na otaczającą ją tkankę.<sup>6</sup>";
+            answerTxt[0].style = "font-family: Noto Sans, sans-serif; line-height: 1.3; font-size: 1rem; padding: 2rem";
+        });
+
+    </script>
 </body>
 
 </html>
