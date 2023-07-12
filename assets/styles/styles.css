@@ -936,4 +936,68 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-table ::-webkit-scrollbar-thumb:hover {
   background: #852102;
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq {
+  /* accordion */
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq__title {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-faq__title {
+    font-size: 1.7rem;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq__accordion-header {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq .accordion {
+  --es-rc-accordion-btn-bg: #e85400;
+  --es-rc-accordion-active-bg: #e85400;
+  --es-rc-accordion-btn-focus-border-color: unset;
+  --es-rc-accordion-btn-focus-box-shadow: unset;
+  --es-rc-accordion-border-color: #FFF;
+  --es-rc-accordion-border-width: 5px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq .accordion-button {
+  color: #FFF;
+  text-align: center;
+  display: unset;
+  padding-right: 3.5rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq .accordion-button:not(.collapsed) {
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq .accordion-button:not(.collapsed):after {
+  background-image: unset;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq .accordion-button::after {
+  content: "+";
+  color: #e85400;
+  background-color: #9f2704;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  border-radius: 50%;
+  background-image: unset;
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 0;
+}
+#es-rc #es-rc-content [data-es-rc] .es-faq .accordion-body {
+  font-size: 0.8rem;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

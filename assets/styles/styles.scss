@@ -149,6 +149,8 @@ body {
         transform: rotate(180deg);
     }
 
+
+
     .es-kv {
         &__Ctn {
             background-image: url("../images/kv-bg-mobile.png");
@@ -961,6 +963,71 @@ body {
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
             background: #852102;
+        }
+    }
+
+    .es-faq {
+        &__title {
+            @include es-section-header;
+        }
+
+        &__accordion {
+            &-header {
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        /* accordion */
+        .accordion {
+            --es-rc-accordion-btn-bg: #e85400;
+            --es-rc-accordion-active-bg: #e85400;
+            --es-rc-accordion-btn-focus-border-color: unset;
+            --es-rc-accordion-btn-focus-box-shadow: unset;
+            --es-rc-accordion-border-color: #FFF;
+            --es-rc-accordion-border-width: 5px;
+        }
+
+        .accordion-button {
+            color: #FFF;
+            text-align: center;
+            display: unset;
+            padding-right: 3.5rem;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #FFF;
+        }
+
+        .accordion-button:not(.collapsed):after {
+            background-image: unset;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        .accordion-button::after {
+            content: "+";
+            color: $es-color--orange;
+            background-color: $es-color--red;
+            width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            line-height: 1;
+            border-radius: 50%;
+            background-image: unset;
+            font-size: 2rem;
+            font-weight: 700;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            right: 0;
+        }
+
+        .accordion-body {
+            font-size: 0.8rem;
+            font-family: "Noto Sans", sans-serif;
+            text-align: center;
         }
     }
 }
