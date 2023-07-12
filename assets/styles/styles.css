@@ -1046,4 +1046,43 @@ body {
   background-color: #FFF;
   outline: 3px solid #e85400;
   color: #e85400;
+}
+#es-rc #es-rc-content [data-es-rc] .es-references {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.3;
+  font-size: 0.9rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-references__title {
+  font-weight: 700;
+}
+#es-rc #es-rc-content [data-es-rc] .es-references__list a {
+  color: #e85400;
+}
+#es-rc #es-rc-content [data-es-rc] .es-references__list li a:hover {
+  color: #f29602;
+}
+#es-rc #es-rc-content [data-es-rc] .es-references__list li a:active {
+  color: #9f2704;
+}
+#es-rc #es-rc-content [data-es-rc] .es-references__list li a:visited {
+  color: #9f2704;
+}
+#es-rc #es-rc-content [data-es-rc] .es-disclaimer {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-disclaimer {
+    font-size: 2.3rem;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-footer p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-footer p {
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
