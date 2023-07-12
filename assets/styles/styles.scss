@@ -71,7 +71,7 @@ body {
     .es-navbar {
         background-color: transparent;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
     }
 
     .navbar-toggler {
@@ -979,7 +979,7 @@ body {
             }
         }
 
-        /* accordion */
+        /* estrap accordion */
         .accordion {
             --es-rc-accordion-btn-bg: #e85400;
             --es-rc-accordion-active-bg: #e85400;
@@ -1028,6 +1028,29 @@ body {
             font-size: 0.8rem;
             font-family: "Noto Sans", sans-serif;
             text-align: center;
+            line-height: 1.3;
+        }
+    }
+    .es-blog {
+        margin-top: 3rem;
+        &__header {
+            @include es-section-header;
+        }
+        &__title {
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 700;
+            margin-top: 1rem;
+            line-height: 1.2;
+            @media (min-width: 576px) {
+                height: 4.2rem;
+            }
+        }
+        &__link {
+            @include es-button;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 700;
+            width: 150px;
         }
     }
 }
