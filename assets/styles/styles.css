@@ -47,7 +47,8 @@ body {
     top: -1em;
   }
 }
-#es-rc #es-rc-content [data-es-rc] ::-moz-selection { /* Code for Firefox */
+#es-rc #es-rc-content [data-es-rc] ::-moz-selection {
+  /* Code for Firefox */
   color: #FFF;
   background: #f29602;
 }
