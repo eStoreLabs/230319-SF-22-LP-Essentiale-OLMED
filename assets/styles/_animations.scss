@@ -1,0 +1,28 @@
+@keyframes es-pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes es-pulse--btn {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(241, 222, 211);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(175, 82, 24, 0.439);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(178, 108, 64, 0.291);
+    }
+}
