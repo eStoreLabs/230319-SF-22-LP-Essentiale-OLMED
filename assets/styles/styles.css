@@ -661,6 +661,16 @@ body {
     top: 50%;
   }
 }
+@media (min-width: 600px) {
+  #es-rc #es-rc-content [data-es-rc] .es-signals__overlay {
+    width: 54%;
+  }
+}
+@media (min-width: 660px) {
+  #es-rc #es-rc-content [data-es-rc] .es-signals__overlay {
+    width: 50%;
+  }
+}
 #es-rc #es-rc-content [data-es-rc] .es-signals__overlay--upperCtn {
   background-color: #9f2704;
 }
@@ -693,17 +703,19 @@ body {
     text-align: left;
     margin-inline: unset;
     padding-inline: unset;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__mainTxt {
     text-align: left;
     font-size: 0.8rem;
+    font-weight: 700;
   }
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__iconTxt {
+    font-weight: 700;
     font-size: 0.8rem;
   }
 }

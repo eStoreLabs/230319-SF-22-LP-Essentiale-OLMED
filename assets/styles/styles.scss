@@ -661,7 +661,12 @@ body {
                 left: 28%;
                 top: 50%;
             }
-
+            @media (min-width: 600px) {
+                width: 54%;
+            }
+            @media (min-width: 660px) {
+                width: 50%;
+            }
             &--upperCtn {
                 background-color: $es-color--red;
 
@@ -695,7 +700,7 @@ body {
                 text-align: left;
                 margin-inline: unset;
                 padding-inline: unset;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
             }
         }
 
@@ -703,12 +708,13 @@ body {
             @media (min-width: 576px) {
                 text-align: left;
                 font-size: 0.8rem;
+                font-weight: 700;
             }
         }
 
         &__iconTxt {
             @media (min-width: 576px) {
-
+                font-weight: 700;
                 font-size: 0.8rem;
             }
         }
