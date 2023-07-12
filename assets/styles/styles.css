@@ -14,6 +14,7 @@ body {
   font-family: "Oswald", sans-serif;
   overflow-x: hidden;
   /* some utility classes */
+  /* text selection color */
   /* navbar styles */
   /* slider buttons */
   /* cross sell slider, remove styles START */
@@ -45,6 +46,14 @@ body {
     font-size: 0.6em;
     top: -1em;
   }
+}
+#es-rc #es-rc-content [data-es-rc] ::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+  background: #f29602;
+}
+#es-rc #es-rc-content [data-es-rc] ::selection {
+  color: #FFF;
+  background: #f29602;
 }
 #es-rc #es-rc-content [data-es-rc] .es-navbar {
   background-color: transparent;
@@ -732,6 +741,10 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-table {
   /* table copied from Essentia RC */
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__title {
   font-family: "Oswald", sans-serif;
@@ -751,60 +764,68 @@ body {
   margin-bottom: 18px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__green--top {
-  border-top: 5px solid #ccc926;
-  border-left: 5px solid #ccc926;
-  border-right: 5px solid #ccc926;
+  border-top: 5px solid #969610;
+  border-left: 5px solid #969610;
+  border-right: 5px solid #969610;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  width: 190px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__green--sides {
-  border-left: 5px solid #ccc926;
-  border-right: 5px solid #ccc926;
+  border-left: 5px solid #969610;
+  border-right: 5px solid #969610;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__green--bottom {
-  border-left: 5px solid #ccc926;
-  border-right: 5px solid #ccc926;
-  border-bottom: 5px solid #ccc926 !important;
+  border-left: 5px solid #969610;
+  border-right: 5px solid #969610;
+  border-bottom: 5px solid #969610 !important;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__orange--topLeft {
-  border-top: 5px solid #f29400;
-  border-left: 5px solid #f29400;
+  border-top: 5px solid #e85400;
+  border-left: 5px solid #e85400;
   border-top-left-radius: 20px;
+  width: 180px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__orange--topRight {
-  border-top: 5px solid #f29400;
-  border-right: 5px solid #f29400;
+  border-top: 5px solid #e85400;
+  border-right: 5px solid #e85400;
   border-top-right-radius: 20px;
+  width: 180px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__orange--sideLeft {
-  border-left: 5px solid #f29400;
+  border-left: 5px solid #e85400;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__orange--sideRight {
-  border-right: 5px solid #f29400;
+  border-right: 5px solid #e85400;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__orange--bottomLeft {
-  border-left: 5px solid #f29400;
-  border-bottom: 5px solid #f29400 !important;
+  border-left: 5px solid #e85400;
+  border-bottom: 5px solid #e85400 !important;
   border-bottom-left-radius: 20px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__orange--bottomRight {
-  border-right: 5px solid #f29400;
-  border-bottom: 5px solid #f29400 !important;
+  border-right: 5px solid #e85400;
+  border-bottom: 5px solid #e85400 !important;
   border-bottom-right-radius: 20px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table table {
   border-collapse: collapse;
   max-width: none;
   min-width: 600px;
+  table-layout: fixed;
+  line-height: 1.2;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table table tbody tr td:first-child {
   background: #eaeaea;
   font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+  width: 150px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table tbody tr:last-child td:first-child {
   background: #fff;
+  border-bottom: none;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table td {
   padding: 8px 14px;
@@ -821,6 +842,7 @@ body {
   padding: 14px;
   text-align: center;
   font-weight: 700;
+  margin: 0;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-table__name {
@@ -842,9 +864,9 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__img {
   margin: 0 auto;
-  max-width: 100px;
   padding: 5px;
   display: block;
+  height: 190px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__link {
   display: block;
@@ -853,8 +875,64 @@ body {
   color: #000;
   border: 2px solid #000;
   text-align: center;
-  padding: 8px 14px;
+  padding: 5px;
   border-radius: 50px;
   margin: 14px auto;
   font-weight: 500;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__link--orange:hover {
+  background-color: #fc7e00;
+  border: 2px solid #fc7e00;
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__link--red:hover {
+  background-color: #92250b;
+  border: 2px solid #92250b;
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__link--green:hover {
+  background-color: #425505;
+  border: 2px solid #425505;
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__link--orange:active {
+  background-color: #c96602;
+  border: 2px solid #c96602;
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__link--red:active {
+  background-color: #691c09;
+  border: 2px solid #691c09;
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__link--green:active {
+  background-color: #2a3603;
+  border: 2px solid #2a3603;
+  color: #FFF;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__hover > tbody > tr:hover > :not(:nth-last-child(2)) {
+  background-color: rgba(242, 150, 2, 0.2);
+}
+#es-rc #es-rc-content [data-es-rc] .es-table__hover > tbody > tr:hover > .es-table__bottom {
+  background-color: white;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table ::-webkit-scrollbar {
+  width: 10px;
+}
+@media (min-width: 600px) {
+  #es-rc #es-rc-content [data-es-rc] .es-table ::-webkit-scrollbar {
+    display: none;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-table ::-webkit-scrollbar-track {
+  background: #ebebeb;
+  box-shadow: inset 0 0 1px #ebebeb;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table ::-webkit-scrollbar-thumb {
+  background: #9f2704;
+  border-radius: 20px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-table ::-webkit-scrollbar-thumb:hover {
+  background: #852102;
 }/*# sourceMappingURL=styles.css.map */
