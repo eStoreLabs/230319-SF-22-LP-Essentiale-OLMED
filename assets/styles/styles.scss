@@ -84,13 +84,13 @@ scroll-behavior: smooth;
     }
 
     .navbar-toggler-icon {
-        background-image: url("../images/nav-burger.png");
+        background-image: url("../images/nav-burger.webp");
         width: 30px;
         height: 28px;
     }
 
     .navbar-collapse {
-        background-image: url("../images/bg.png");
+        background-image: url("../images/bg.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -150,11 +150,11 @@ scroll-behavior: smooth;
 
     /* slider buttons */
     .carousel-control-prev-icon {
-        background-image: url("../images/slider-btn.png");
+        background-image: url("../images/slider-btn.webp");
     }
 
     .carousel-control-next-icon {
-        background-image: url("../images/slider-btn.png");
+        background-image: url("../images/slider-btn.webp");
         transform: rotate(180deg);
     }
 
@@ -162,7 +162,7 @@ scroll-behavior: smooth;
 
     .es-kv {
         &__Ctn {
-            background-image: url("../images/kv-bg-mobile.png");
+            background-image: url("../images/kv-bg-mobile.webp");
             background-position: top;
             background-size: contain;
             background-repeat: no-repeat;
@@ -172,7 +172,7 @@ scroll-behavior: smooth;
 
         &__overlay {
             position: absolute;
-            background-image: url("../images/kv-bg-overlay-clean.png");
+            background-image: url("../images/kv-bg-overlay-clean.webp");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -191,7 +191,7 @@ scroll-behavior: smooth;
                 content: "";
                 position: absolute;
                 max-width: 80%;
-                background-image: url("../images/watroba.png");
+                background-image: url("../images/watroba.webp");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -239,7 +239,7 @@ scroll-behavior: smooth;
 
         .es-kv {
             &__Ctn {
-                background-image: url("../images/kv-bg-desktop.png");
+                background-image: url("../images/kv-bg-desktop.webp");
                 background-size: cover;
                 min-height: 500px;
             }
@@ -302,11 +302,11 @@ scroll-behavior: smooth;
         }
 
         & .carousel-control-prev-icon {
-            background-image: url("../images/slider-btn.png");
+            background-image: url("../images/slider-btn.webp");
         }
 
         & .carousel-control-next-icon {
-            background-image: url("../images/slider-btn.png");
+            background-image: url("../images/slider-btn.webp");
             transform: rotate(180deg);
         }
 
@@ -424,7 +424,7 @@ scroll-behavior: smooth;
     @media (min-width: 576px) {
         .es-features {
             &__Ctn {
-                background-image: url("../images/info-watroba.png");
+                background-image: url("../images/info-watroba.webp");
                 background-size: 50%;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -494,19 +494,19 @@ scroll-behavior: smooth;
         }
 
         &__Ctn {
-            background-image: url("../images/bg-quiz-mobile.png");
+            background-image: url("../images/bg-quiz-mobile.webp");
             background-position: center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
             position: relative;
 
             @media (min-width: 576px) {
-                background-image: url("../images/bg-quiz-desktop.png");
+                background-image: url("../images/bg-quiz-desktop.webp");
             }
 
             &:after {
                 content: "";
-                background-image: url("../images/watroba.png");
+                background-image: url("../images/watroba.webp");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -718,7 +718,7 @@ scroll-behavior: smooth;
                 background-color: $es-color--red;
 
                 @media (min-width: 576px) {
-                    background-image: url("../images/bg.png");
+                    background-image: url("../images/bg.webp");
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -727,7 +727,7 @@ scroll-behavior: smooth;
             }
 
             &--lowerCtn {
-                background-image: url("../images/bg.png");
+                background-image: url("../images/bg.webp");
 
                 @media (min-width: 576px) {
                     background-image: unset;

@@ -96,12 +96,12 @@ body {
   border: none;
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-toggler-icon {
-  background-image: url("../images/nav-burger.png");
+  background-image: url("../images/nav-burger.webp");
   width: 30px;
   height: 28px;
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,14 +153,14 @@ body {
   }
 }
 #es-rc #es-rc-content [data-es-rc] .carousel-control-prev-icon {
-  background-image: url("../images/slider-btn.png");
+  background-image: url("../images/slider-btn.webp");
 }
 #es-rc #es-rc-content [data-es-rc] .carousel-control-next-icon {
-  background-image: url("../images/slider-btn.png");
+  background-image: url("../images/slider-btn.webp");
   transform: rotate(180deg);
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__Ctn {
-  background-image: url("../images/kv-bg-mobile.png");
+  background-image: url("../images/kv-bg-mobile.webp");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__overlay {
   position: absolute;
-  background-image: url("../images/kv-bg-overlay-clean.png");
+  background-image: url("../images/kv-bg-overlay-clean.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -188,7 +188,7 @@ body {
   content: "";
   position: absolute;
   max-width: 80%;
-  background-image: url("../images/watroba.png");
+  background-image: url("../images/watroba.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -225,7 +225,7 @@ body {
     display: none;
   }
   #es-rc #es-rc-content [data-es-rc] .es-kv__Ctn {
-    background-image: url("../images/kv-bg-desktop.png");
+    background-image: url("../images/kv-bg-desktop.webp");
     background-size: cover;
     min-height: 500px;
   }
@@ -283,10 +283,10 @@ body {
   margin: auto;
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross .carousel-control-prev-icon {
-  background-image: url("../images/slider-btn.png");
+  background-image: url("../images/slider-btn.webp");
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross .carousel-control-next-icon {
-  background-image: url("../images/slider-btn.png");
+  background-image: url("../images/slider-btn.webp");
   transform: rotate(180deg);
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross__slide {
@@ -412,7 +412,7 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-features__Ctn {
-    background-image: url("../images/info-watroba.png");
+    background-image: url("../images/info-watroba.webp");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -486,7 +486,7 @@ body {
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__Ctn {
-  background-image: url("../images/bg-quiz-mobile.png");
+  background-image: url("../images/bg-quiz-mobile.webp");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -494,12 +494,12 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__Ctn {
-    background-image: url("../images/bg-quiz-desktop.png");
+    background-image: url("../images/bg-quiz-desktop.webp");
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__Ctn:after {
   content: "";
-  background-image: url("../images/watroba.png");
+  background-image: url("../images/watroba.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -751,14 +751,14 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__overlay--upperCtn {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-signals__overlay--lowerCtn {
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg.webp");
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__overlay--lowerCtn {
