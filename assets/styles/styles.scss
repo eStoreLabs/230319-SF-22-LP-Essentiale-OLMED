@@ -345,17 +345,7 @@ body {
 
     @media (min-width: 600px) {
         .es-cross {
-            // &__header {
-            //     padding-inline: unset;
-            // }
-
-            // &__productName {
-            //     font-size: 1.5rem;
-            // }
-
-            // &__productDesc {
-            //     font-size: 1rem;
-            // }
+            
 
             &__packshot {
                 max-height: 230px;
@@ -435,7 +425,15 @@ body {
 
     .es-quiz {
         background: linear-gradient(180deg, rgba(235, 235, 235, 1) 50%, rgba(255, 255, 255, 1) 50%);
-
+        &__badge {
+           margin-top: -20px;
+           @media (min-width: 576px) {
+            margin-right: auto;
+            margin-left: 40px;
+            margin-top: -51px;
+           }
+        }
+        
         &__circle {
             background-color: $es-color--orange;
             color: white;
@@ -501,7 +499,7 @@ body {
                 height: 100px;
 
                 @media (min-width: 576px) {
-                    bottom: -9%;
+                    bottom: -2%;
                 }
             }
         }

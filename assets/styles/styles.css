@@ -385,6 +385,16 @@ body {
 #es-rc #es-rc-content [data-es-rc] .es-quiz {
   background: linear-gradient(180deg, rgb(235, 235, 235) 50%, rgb(255, 255, 255) 50%);
 }
+#es-rc #es-rc-content [data-es-rc] .es-quiz__badge {
+  margin-top: -20px;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-quiz__badge {
+    margin-right: auto;
+    margin-left: 40px;
+    margin-top: -51px;
+  }
+}
 #es-rc #es-rc-content [data-es-rc] .es-quiz__circle {
   background-color: #e85400;
   color: white;
@@ -459,7 +469,7 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__Ctn:after {
-    bottom: -9%;
+    bottom: -2%;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__slide-title {
