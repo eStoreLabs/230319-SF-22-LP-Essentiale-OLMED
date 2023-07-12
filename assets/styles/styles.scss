@@ -198,7 +198,7 @@ body {
             color: #FFF;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 1.8rem;
             line-height: 1.2;
         }
 
@@ -264,7 +264,7 @@ body {
             }
 
             &__title {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
         }
     }
@@ -274,6 +274,9 @@ body {
         &__header {
             @include es-section-header;
             padding-inline: 4rem;
+            @media (min-width: 576px) {
+                padding-inline: unset;
+            }
         }
 
         & .carousel {
@@ -301,6 +304,7 @@ body {
             flex-direction: column;
             align-items: center;
             gap: 0.5rem;
+            height: 375px;
 
             .es-line {
                 margin-block: 0.7rem;
@@ -313,6 +317,9 @@ body {
             font-size: 1rem;
             text-align: center;
             margin-bottom: 0;
+            @media (min-width: 576px) {
+                font-size: 1.8rem;
+            }
         }
 
         &__productDesc {
@@ -320,29 +327,35 @@ body {
             font-weight: 700;
             text-align: center;
             margin-bottom: 0;
+            @media (min-width: 576px) {
+                font-size: 1.4rem;
+            }
         }
 
         &__btn {
             @include es-button;
             font-style: italic;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            @media (min-width: 576px) {
+                font-size: 1.1rem;
+            }
         }
     }
 
     @media (min-width: 600px) {
         .es-cross {
-            &__header {
-                padding-inline: unset;
-            }
+            // &__header {
+            //     padding-inline: unset;
+            // }
 
-            &__productName {
-                font-size: 1.5rem;
-            }
+            // &__productName {
+            //     font-size: 1.5rem;
+            // }
 
-            &__productDesc {
-                font-size: 1rem;
-            }
+            // &__productDesc {
+            //     font-size: 1rem;
+            // }
 
             &__packshot {
                 max-height: 230px;
@@ -1081,8 +1094,8 @@ body {
             color: $es-color--red;
         }
 
-        &__list li a:visited {
-            color: $es-color--red;
+         &__list li a:visited {
+             color: $es-color--red;
         }
     }
 
@@ -1090,19 +1103,16 @@ body {
         font-family: "Noto Sans", sans-serif;
         font-size: 1.3rem;
         line-height: 1.3;
-
         @media (min-width: 576px) {
             font-size: 2.3rem;
 
         }
     }
-
     .es-footer {
 
         p {
             font-size: 0.8rem;
             margin: 0;
-
             @media (min-width: 576px) {
                 font-size: 0.6rem;
             }
