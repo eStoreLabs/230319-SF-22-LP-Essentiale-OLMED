@@ -26,3 +26,43 @@
         box-shadow: 0 0 0 rgba(178, 108, 64, 0.291);
     }
 }
+
+
+/**
+ * ----------------------------------------
+ * animation to show quiz answer
+ * ----------------------------------------
+ */
+ @-webkit-keyframes es-scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes es-scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

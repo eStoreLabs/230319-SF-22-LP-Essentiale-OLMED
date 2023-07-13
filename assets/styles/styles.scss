@@ -210,6 +210,10 @@ body {
             text-transform: uppercase;
             font-size: 1.8rem;
             line-height: 1.2;
+            .es-sup {
+                    font-size: 0.4em;
+    top: -1.5em;
+            }
         }
 
         &__txt {
@@ -472,7 +476,7 @@ body {
             animation: es-pulse--btn 3s ease 0s infinite normal forwards;
 
             @media (min-width: 576px) {
-                font-size: 3.6rem;
+                font-size: 3.2rem;
                 width: 130px;
                 height: 130px;
             }
@@ -496,6 +500,17 @@ body {
 
         &__title {
             @include es-section-header;
+            
+            @media (min-width: 576px) {
+                margin: 0;
+            padding-bottom: 0;
+            margin-bottom: -1rem;
+            max-width: 300px;
+            }
+            @media (min-width: 680px) {
+                max-width: unset;
+                margin-bottom: -2rem;
+            }
         }
 
         &__Ctn {
@@ -550,12 +565,16 @@ body {
                 font-size: 1.3rem;
                 font-weight: 700;
                 font-family: "Oswald", sans-serif;
-
+                
+                -webkit-animation: es-scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: es-scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                
                 @media (min-width: 576px) {
                     font-size: 2.3rem;
                 }
             }
         }
+        
 
         &__question--number {
             font-weight: 700;
@@ -703,7 +722,7 @@ body {
         }
 
         .carousel-inner {
-            max-width: 70%;
+            max-width: 73%;
             height: 150px;
             @media (min-width: 576px) {
                 height: 250px;
@@ -727,7 +746,9 @@ body {
             text-align: center;
             margin-top: 1.5rem;
             line-height: 1.2;
-
+            .es-sup {
+                top: -0.6em;
+            }
             @media (min-width: 576px) {
                 font-size: 1.1rem;
             }
