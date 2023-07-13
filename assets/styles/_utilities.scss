@@ -4,9 +4,6 @@ $es-color--orange: #e85400;
 $es-color--orange--lighter: #f29602;
 $es-color--gray: #ebebeb;
 
-
-
-
 /* mixins */
 @mixin es-section-header {
     font-family: "Oswald", sans-serif;
@@ -52,11 +49,5 @@ $es-color--gray: #ebebeb;
         font-size: 1.5rem;
         font-weight: 700;
     }
-    // &:hover {
-    //     background-color: #FFF;
-    //     outline: 3px solid $btn-color;
-    //     color: $btn-color;
-    // }
-    
 }
 

@@ -4,16 +4,11 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
     margin: 0;
-    scroll-behavior: smooth;
 }
-
-
-
 
 /******************************************************************/
 /************************* MAIN STYLES ****************************/
@@ -451,9 +446,6 @@ body {
 
     .es-quiz {
         background: linear-gradient(180deg, rgba(235, 235, 235, 1) 50%, rgba(255, 255, 255, 1) 50%);
-        // .carousel-inner {
-        //     padding-top: 6rem;
-        // }
 
         &__badge {
             position: absolute;
@@ -665,7 +657,6 @@ body {
             .carousel-inner {
                 width: 80%;
             }
-
         }
     }
 
@@ -777,7 +768,6 @@ body {
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-
                 }
             }
 
