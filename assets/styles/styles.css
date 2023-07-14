@@ -112,10 +112,40 @@ body {
 #es-rc #es-rc-content [data-es-rc] .navbar-toggler {
   border: none;
 }
-#es-rc #es-rc-content [data-es-rc] .navbar-toggler-icon {
-  background-image: url("../images/nav-burger.webp");
-  width: 30px;
-  height: 28px;
+#es-rc #es-rc-content [data-es-rc] .navbar-toggler[aria-expanded=true] .es-nav__navStroke--top {
+  transform: translate(0, 0px) rotate(45deg);
+}
+#es-rc #es-rc-content [data-es-rc] .navbar-toggler[aria-expanded=true] .es-nav__navStroke--middle {
+  display: none;
+}
+#es-rc #es-rc-content [data-es-rc] .navbar-toggler[aria-expanded=true] .es-nav__navStroke--bottom {
+  transform: translate(0, 0px) rotate(-45deg);
+}
+#es-rc #es-rc-content [data-es-rc] .es-nav__navStrokeCtn {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-nav__navStroke {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+#es-rc #es-rc-content [data-es-rc] .es-nav__navStroke--top {
+  transform: translate(0, -15px);
+}
+#es-rc #es-rc-content [data-es-rc] .es-nav__navStroke--middle {
+  transform: translate(0, 0px);
+}
+#es-rc #es-rc-content [data-es-rc] .es-nav__navStroke--bottom {
+  transform: translate(0, 15px);
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
   background-image: url("../images/bg.webp");
@@ -126,24 +156,38 @@ body {
   height: 100svh;
   display: grid;
   place-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
+    position: static;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .nav-link {
   color: #FFF;
   font-size: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .nav-link {
+    font-weight: unset;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .nav-link:hover {
-  color: #e85400;
-  border-bottom: 4px solid #e85400;
-  margin-bottom: -4px;
+  color: #000;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .nav-link:hover {
+    color: #e85400;
+    border-bottom: 4px solid #e85400;
+    margin-bottom: -4px;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-nav {
   text-align: center;
   gap: 3rem;
-}
-@media (min-width: 640px) {
-  #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
-    height: unset;
-  }
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
