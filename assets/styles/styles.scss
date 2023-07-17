@@ -614,7 +614,7 @@ body {
             }
 
             @media (min-width: 757px) {
-                height: 650px;
+                height: 669px;
             }
 
             &:after {
@@ -765,35 +765,29 @@ body {
         }
 
         &__resetBtn {
+            @include es-button--quiz($es-color--red);
+            margin-top: -50px!important;
             display: block;
-
             margin: auto;
             position: relative;
             z-index: 2;
-            border: none;
-            font-size: 1.5rem;
-            padding: 0.3rem;
-            background-color: $es-color--orange--lighter;
-            border: 3px solid #FFF;
-            color: #FFF;
-            text-transform: uppercase;
-            font-style: italic;
-            font-weight: 700;
-            transition: all 200ms ease-in;
-
+            width: 200px;
+            border: 3px solid $es-color--red;
             &:hover {
-                background-color: #FFF;
-                color: $es-color--orange--lighter;
-                border: 3px solid $es-color--orange--lighter;
-            }
+                 background-color: #FFF;
+                 color: $es-color--red;
+                 border: 3px solid $es-color--red;
+             }
 
-            &:active {
-                background-color: $es-color--orange;
-                border: 3px solid $es-color--orange;
-                color: #FFF;
-            }
 
-        }
+            @media (min-width: 576px) {
+                width: 230px;
+                margin-top: -40px!important;
+            }
+            @media (min-width: 757px) {
+                margin-top: -60px!important;
+            }
+        }  
     }
 
     @media (min-width: 576px) {

@@ -110,8 +110,8 @@ let createSlides = () => {
 
         <div class="es-quiz__question--answers" id="es-slide--${parseInt(i)+1}">
             <div class="es-quiz__question--buttonsCtn d-flex flex-column align-items-center flex-sm-row justify-content-around gap-3">
-                <p class="es-quiz__btn--fact es-quiz__btn--fact--hover">FAKT</p>
-                <p class="es-quiz__btn--myth es-quiz__btn--myth--hover">MIT</p>
+                <button class="es-quiz__btn--fact es-quiz__btn--fact--hover">FAKT</button>
+                <button class="es-quiz__btn--myth es-quiz__btn--myth--hover">MIT</button>
                 <p class="es-quiz__question-mark">?</p>
                 <div class="es-quiz__btn--line"></div>
             </div>
