@@ -73,22 +73,25 @@ body {
 
     .es-navbar {
         background-color: transparent;
-        position: fixed;
+        position: absolute;
         z-index: 2;
     }
 
     .navbar-toggler {
         border: none;
-        
+
     }
+
     .navbar-toggler[aria-expanded="true"] .es-nav__navStroke {
         &--top {
             transform: translate(0, 0px) rotate(45deg);
         }
+
         &--middle {
-            
+
             display: none;
         }
+
         &--bottom {
             transform: translate(0, 0px) rotate(-45deg);
         }
@@ -102,6 +105,7 @@ body {
             position: relative;
             z-index: 1;
         }
+
         &__navStroke {
             display: block;
             position: absolute;
@@ -111,16 +115,19 @@ body {
             height: 5px;
             background-color: black;
             transition: all 0.3s ease;
+
             &--top {
                 transform: translate(0, -15px);
             }
+
             &--middle {
                 transform: translate(0, 0px);
             }
+
             &--bottom {
                 transform: translate(0, 15px);
             }
-            
+
         }
     }
 
@@ -137,6 +144,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
+
         @media (min-width: 768px) {
             position: static;
         }
@@ -146,6 +154,7 @@ body {
         color: #FFF;
         font-size: 2rem;
         font-weight: 700;
+
         @media (min-width: 768px) {
             font-weight: unset;
         }
@@ -153,6 +162,7 @@ body {
 
     .nav-link:hover {
         color: #000;
+
         @media (min-width: 768px) {
             color: #e85400;
             border-bottom: 4px solid #e85400;
@@ -373,32 +383,38 @@ body {
             align-items: center;
             gap: 0.5rem;
             min-height: 380px;
+
             @media (min-width: 576px) and (max-width: 674px) {
                 min-height: 410px;
             }
+
             .es-line {
                 margin-block: 0.7rem;
             }
 
         }
+
         &__packshot {
             max-height: 220px;
-        width: auto;
+            width: auto;
         }
+
         &__productName {
             font-weight: 700;
             font-size: 1rem;
             text-align: center;
             margin-bottom: 0;
             line-height: 1.1;
-            
+
             @media (min-width: 576px) and (max-width: 674px) {
-                
+
                 width: 11ch;
             }
+
             @media (min-width: 675px) {
                 width: unset;
             }
+
             @media (min-width: 576px) {
                 font-size: 1.8rem;
             }
@@ -598,7 +614,7 @@ body {
             }
 
             @media (min-width: 757px) {
-                height: 650px;
+                height: 669px;
             }
 
             &:after {
@@ -747,6 +763,31 @@ body {
                 padding-inline: 0rem;
             }
         }
+
+        &__resetBtn {
+            @include es-button--quiz($es-color--red);
+            margin-top: -50px!important;
+            display: block;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+            width: 200px;
+            border: 3px solid $es-color--red;
+            &:hover {
+                 background-color: #FFF;
+                 color: $es-color--red;
+                 border: 3px solid $es-color--red;
+             }
+
+
+            @media (min-width: 576px) {
+                width: 230px;
+                margin-top: -40px!important;
+            }
+            @media (min-width: 757px) {
+                margin-top: -60px!important;
+            }
+        }  
     }
 
     @media (min-width: 576px) {
@@ -890,6 +931,7 @@ body {
             font-size: 1.7rem;
             font-weight: 700;
             @include es-section-header;
+
             @media (min-width: 576px) {
                 text-align: left;
                 margin-inline: unset;

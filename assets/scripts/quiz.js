@@ -85,7 +85,8 @@ const questions = [
 ];
 
 // generate all the slides
-for (let i in questions) {
+let createSlides = () => {
+  for (let i in questions) {
     // create a div alement with a class carousel-item
     let slide = document.createElement("div");
     slide.classList.add("carousel-item");
@@ -107,26 +108,45 @@ for (let i in questions) {
             </p>
         </div>
 
-        <div class="es-quiz__question--answers">
+        <div class="es-quiz__question--answers" id="es-slide--${parseInt(i)+1}">
             <div class="es-quiz__question--buttonsCtn d-flex flex-column align-items-center flex-sm-row justify-content-around gap-3">
-                <p class="es-quiz__btn--fact es-quiz__btn--fact--hover">FAKT</p>
-                <p class="es-quiz__btn--myth es-quiz__btn--myth--hover">MIT</p>
+                <button class="es-quiz__btn--fact es-quiz__btn--fact--hover">FAKT</button>
+                <button class="es-quiz__btn--myth es-quiz__btn--myth--hover">MIT</button>
                 <p class="es-quiz__question-mark">?</p>
                 <div class="es-quiz__btn--line"></div>
             </div>
             <p class="es-quiz__question--footer text-center">wybierz odpowiedź</p>
             <img class="es-altTxt" alt=""> 
         </div>`;
-  
+
     slide.querySelector(".es-quiz__btn--fact").addEventListener("click", () => {
       userAnswer(0, i, questions[i].correctButton);
     });
     slide.querySelector(".es-quiz__btn--myth").addEventListener("click", () => {
       userAnswer(1, i, questions[i].correctButton);
     });
+
+    // add reset btn for slide 8
+    if (i == 7) {
+      slide.querySelector(".es-quiz__btn--fact").addEventListener("click", () => {
+        addResetBtn(i);
+      });
+      slide.querySelector(".es-quiz__btn--myth").addEventListener("click", () => {
+        addResetBtn(i);
+      });
+    }
     // add this whole slide to the DOM inside carousel-inner
     document.querySelector("#carouselQuiz .carousel-inner").appendChild(slide);
   }
+};
+
+// remove all the slides
+let removeSlides = () => {
+  let quizSlides = document.querySelector("#carouselQuiz .carousel-inner");
+  while (quizSlides.firstChild) {
+    quizSlides.firstChild.remove();
+  }
+}
 
 // do this when you click on an answer button
 let userAnswer = (clickedButton, slideNumber, correctButton) => {
@@ -190,7 +210,25 @@ let userAnswer = (clickedButton, slideNumber, correctButton) => {
   // #5. add alt txt to empty img element to please Sanofi
   setAltTxt[slideNumber].setAttribute("alt", questions[slideNumber].altTxt);
 
-  // #6. finally, add class "alreadyClicked" to both buttons
+  // #6. add class "alreadyClicked" to both buttons
   btnFact[slideNumber].classList.add("alreadyClicked");
   btnMyth[slideNumber].classList.add("alreadyClicked");
+
 };
+
+// add reset btn to the last slide after revealing the answer
+let addResetBtn = () => {
+  //display the button
+  let resetBtn = document.createElement("button");
+  resetBtn.classList.add("es-quiz__resetBtn");
+  resetBtn.innerHTML = "Rozwiąż ponownie";
+  document.querySelector("#carouselQuiz .carousel-inner #es-slide--8").appendChild(resetBtn);
+
+  // buind a reset function to it
+  resetBtn.addEventListener("click", () => {
+    removeSlides();
+    createSlides();
+  })
+}
+
+createSlides();

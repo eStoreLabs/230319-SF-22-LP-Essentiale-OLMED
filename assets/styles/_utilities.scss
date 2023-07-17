@@ -25,11 +25,12 @@ $es-color--gray: #ebebeb;
     width: 150px;
     margin: auto;
     transition: all 300ms ease-in-out;
-
+    cursor: pointer;
     &:hover {
         background-color: #FFF;
         outline: 3px solid $es-color--orange;
         color: $es-color--orange;
+        
     }
 }
 @mixin es-button--quiz($btn-color) {
@@ -45,9 +46,9 @@ $es-color--gray: #ebebeb;
     font-size: 1.3rem;
     width: 170px;
     transition: all 300ms ease-in-out;
+    border: none;
     @media (min-width: 576px) {
         font-size: 1.5rem;
         font-weight: 700;
     }
 }
-
