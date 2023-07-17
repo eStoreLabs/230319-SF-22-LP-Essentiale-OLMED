@@ -107,7 +107,7 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-navbar {
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 #es-rc #es-rc-content [data-es-rc] .navbar-toggler {
