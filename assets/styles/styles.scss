@@ -16,8 +16,9 @@ body {
 
 
 #es-rc #es-rc-content [data-es-rc] {
-    font-size: 100%;
+    font-size: 16px;
     max-width: 790px;
+    line-height: normal;
     margin: auto;
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
@@ -888,7 +889,7 @@ body {
             font-family: "Oswald", sans-serif;
             font-size: 1.7rem;
             font-weight: 700;
-
+            @include es-section-header;
             @media (min-width: 576px) {
                 text-align: left;
                 margin-inline: unset;
