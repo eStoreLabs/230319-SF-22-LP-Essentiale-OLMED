@@ -154,12 +154,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
+  /* Avoid Chrome to see Safari hack */
   display: grid;
   place-content: center;
   position: absolute;
   top: 0;
   left: 0;
+}
+@supports (-webkit-touch-callout: none) {
+  #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
+  }
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
@@ -274,7 +281,7 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__txt {
   font-size: 1.1rem;
-  line-height: 1.1;
+  line-height: 1.2;
   max-width: 90%;
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__txt--mobile {
@@ -630,24 +637,24 @@ body {
 #es-rc #es-rc-content [data-es-rc] .es-quiz__slide-title {
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 16px;
   color: #FFF;
-  margin-top: 7rem;
+  margin-top: 112px;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__slide-title {
-    font-size: 1.1rem;
+    font-size: 17.6px;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__slide-title--showAnswer {
-  font-size: 1.3rem;
+  font-size: 20.8px;
   font-weight: 700;
   font-family: "Oswald", sans-serif;
   animation: es-scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__slide-title--showAnswer {
-    font-size: 2.3rem;
+    font-size: 36.8px;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__question--number {
@@ -764,7 +771,7 @@ body {
 #es-rc #es-rc-content [data-es-rc] .es-quiz__question--footer {
   color: #FFF;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 20.8px;
   padding: 2rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__question--footer a {
@@ -774,7 +781,7 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__question--footer {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     padding-inline: 0rem;
   }
 }
@@ -983,6 +990,9 @@ body {
     font-size: 1.6rem;
   }
 }
+#es-rc #es-rc-content [data-es-rc] .es-signals__mainTxt {
+  line-height: 1.3;
+}
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__mainTxt {
     text-align: left;
@@ -993,6 +1003,9 @@ body {
 #es-rc #es-rc-content [data-es-rc] .es-signals__icon {
   animation: es-pulse--btn 3s ease 0s infinite normal forwards;
   border-radius: 50%;
+}
+#es-rc #es-rc-content [data-es-rc] .es-signals__iconTxt {
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__iconTxt {

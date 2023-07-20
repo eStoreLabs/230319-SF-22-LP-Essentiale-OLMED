@@ -138,7 +138,14 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100svw;
-        height: 100svh;
+        min-height: 100svh;
+        
+        /* Avoid Chrome to see Safari hack */
+        @supports (-webkit-touch-callout: none) {
+            /* The hack for Safari */
+            min-height: -webkit-fill-available;
+        }
+
         display: grid;
         place-content: center;
         position: absolute;
@@ -281,7 +288,7 @@ body {
 
         &__txt {
             font-size: 1.1rem;
-            line-height: 1.1;
+            line-height: 1.2;
             max-width: 90%;
 
             &--mobile {
@@ -639,17 +646,17 @@ body {
         &__slide-title {
             font-family: 'Noto Sans', sans-serif;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 16px;
             color: #FFF;
-            margin-top: 7rem;
+            margin-top: 112px;
 
             @media (min-width: 576px) {
 
-                font-size: 1.1rem;
+                font-size: 17.6px;
             }
 
             &--showAnswer {
-                font-size: 1.3rem;
+                font-size: 20.8px;
                 font-weight: 700;
                 font-family: "Oswald", sans-serif;
 
@@ -657,7 +664,7 @@ body {
                 animation: es-scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
                 @media (min-width: 576px) {
-                    font-size: 2.3rem;
+                    font-size: 36.8px;
                 }
             }
         }
@@ -748,7 +755,7 @@ body {
         &__question--footer {
             color: #FFF;
             font-weight: 700;
-            font-size: 1.3rem;
+            font-size: 20.8px;
             padding: 2rem;
 
             //height: 100px;
@@ -759,35 +766,37 @@ body {
             }
 
             @media (min-width: 576px) {
-                font-size: 1.1rem;
+                font-size: 17.6px;
                 padding-inline: 0rem;
             }
         }
 
         &__resetBtn {
             @include es-button--quiz($es-color--red);
-            margin-top: -50px!important;
+            margin-top: -50px !important;
             display: block;
             margin: auto;
             position: relative;
             z-index: 2;
             width: 200px;
             border: 3px solid $es-color--red;
+
             &:hover {
-                 background-color: #FFF;
-                 color: $es-color--red;
-                 border: 3px solid $es-color--red;
-             }
+                background-color: #FFF;
+                color: $es-color--red;
+                border: 3px solid $es-color--red;
+            }
 
 
             @media (min-width: 576px) {
                 width: 230px;
-                margin-top: -40px!important;
+                margin-top: -40px !important;
             }
+
             @media (min-width: 757px) {
-                margin-top: -60px!important;
+                margin-top: -60px !important;
             }
-        }  
+        }
     }
 
     @media (min-width: 576px) {
@@ -941,10 +950,13 @@ body {
         }
 
         &__mainTxt {
+            line-height: 1.3;
+
             @media (min-width: 576px) {
                 text-align: left;
                 font-size: 0.8rem;
                 font-weight: 700;
+
             }
         }
 
@@ -954,6 +966,8 @@ body {
         }
 
         &__iconTxt {
+            line-height: 1.3;
+
             @media (min-width: 576px) {
                 font-weight: 700;
                 font-size: 0.8rem;

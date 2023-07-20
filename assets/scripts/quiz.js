@@ -6,7 +6,7 @@ const questions = [
   {
     question: "Wątroba nie boli",
     answer:
-      "Aby boleć, wątroba musiałaby posiadać nerwy czuciowe, których nie ma. Zawiera je jednak otaczająca ją warstwa tkanki. Uczucie ucisku w okolicach wątroby pojawia się wtedy, gdy - powiększona w wyniku choroby - napiera na otaczającą ją tkankę.<sup>6</sup>",
+      "Aby boleć, wątroba musiałaby posiadać nerwy czuciowe, których nie ma. Zawiera je jednak otaczająca ją warstwa tkanki. Uczucie ucisku w okolicach wątroby pojawia się wtedy, gdy - powiększona w&nbsp;wyniku choroby - napiera na otaczającą ją tkankę.<sup>6</sup>",
     correctButton: 0,
     altTxt:
       "Co lubi wątroba? Czy wątroba boli? Kawa a wątroba? Co na regenerację wątroby? Dowiedz się więcej stronie apteki Melissa.",
@@ -17,7 +17,7 @@ const questions = [
     question:
       "Problemy z wątrobą mają tylko osoby nadużywające alkoholu i otyłe",
     answer:
-      "Prawda, że nadużywanie alkoholu, zwłaszcza długotrwałe, przyczynia się do uszkodzenia wątroby.<sup>7</sup> Otyłość również źle wpływa na funkcjonowanie wątroby. Ale do czynników powodujących problemy z wątrobą należą także wirusowe zapalenia wątroby, cukrzyca typu drugiego, zespół metaboliczny i długotrwałe przyjmowanie niektórych leków.<sup>8,9</sup>",
+      "Prawda, że nadużywanie alkoholu, zwłaszcza długotrwałe, przyczynia się do uszkodzenia wątroby.<sup>7</sup> Otyłość również źle wpływa na funkcjonowanie wątroby. Ale do czynników powodujących problemy z&nbsp;wątrobą należą także wirusowe zapalenia wątroby, cukrzyca typu drugiego, zespół metaboliczny i&nbsp;długotrwałe przyjmowanie niektórych leków.<sup>8,9</sup>",
     correctButton: 1,
     altTxt:
       "Co to jest polekowe uszkodzenie wątroby, toksyczne uszkodzenie wątroby? Po której stronie jest wątroba? Sprawdź, co wiesz o wątrobie.",
@@ -37,7 +37,7 @@ const questions = [
   {
     question: "Detoks może zregenerować uszkodzenia wątroby",
     answer:
-      "Zdrowa wątroba sama przeprowadza proces detoksykacji. Nie potrzebuje dodatkowego wsparcia z zewnątrz, na przykład w postaci diet sokowych.<sup>10</sup> Aby utrzymać wątrobę w&nbsp;zdrowiu, zmniejsz spożycie cukrów prostych i nasyconych tłuszczów, a także zadbaj o&nbsp;codzienną aktywność fizyczną.<sup>11</sup>",
+      "Zdrowa wątroba sama przeprowadza proces detoksykacji. Nie potrzebuje dodatkowego wsparcia z&nbsp;zewnątrz, na przykład w postaci diet sokowych.<sup>10</sup> Aby utrzymać wątrobę w&nbsp;zdrowiu, zmniejsz spożycie cukrów prostych i nasyconych tłuszczów, a także zadbaj o&nbsp;codzienną aktywność fizyczną.<sup>11</sup>",
     correctButton: 1,
     altTxt:
       "Co jest dobre na wątrobę? Co na stłuszczenie wątroby? Oczyszczanie wątroby i dieta wątrobowa, co jeść a czego unikać. ",
@@ -47,7 +47,7 @@ const questions = [
   {
     question: "Kawa nie szkodzi wątrobie",
     answer:
-      "Kawa sprzyja m.in. redukcji stłuszczenia i zwłóknienia wątroby, zmniejsza gromadzenie się tłuszczu i odkładanie kolagenu w wątrobie oraz promuje zdolność antyoksydacyjną, poprzez wzrost poziomu glutationu.<sup>12</sup>",
+      "Kawa sprzyja m.in. redukcji stłuszczenia i&nbsp;zwłóknienia wątroby, zmniejsza gromadzenie się tłuszczu i&nbsp;odkładanie kolagenu w wątrobie oraz promuje zdolność antyoksydacyjną, poprzez wzrost poziomu glutationu.<sup>12</sup>",
     correctButton: 0,
     altTxt:
       "Jak dbać o wątrobę? Dieta wątrobowa i tabletki na wątrobę pomagają zachować witalność i wspierają wątrobę na co dzień.",
@@ -57,7 +57,7 @@ const questions = [
   {
     question: "Wątroba pełni w naszym organizmie ponad 500 różnych funkcji",
     answer:
-      "Wątroba pełni funkcje metaboliczne (gospodarka węglowodanowa, tłuszczowa, wytwarzanie żółci niezbędnej do trawienia tłuszczów), funkcje magazynujące (witaminy oraz żelazo związane z ferrytyną), funkcje odtruwające – dotyczy to m.in. neutralizacji alkoholu i leków.<sup>2</sup> <a href='https://www.apteka-melissa.pl/blog/artykul/jak-dbac-o-watrobe-dieta-ruch-i-inne-sposoby,1003.html' target='_blank'>Dowiedz się więcej o funkcjach wątroby.</a>",
+      "Wątroba pełni funkcje metaboliczne (gospodarka węglowodanowa, tłuszczowa, wytwarzanie żółci niezbędnej do trawienia tłuszczów), funkcje magazynujące (witaminy oraz żelazo związane z&nbsp;ferrytyną), funkcje odtruwające – dotyczy to m.in. neutralizacji alkoholu i leków.<sup>2</sup> <a href='https://www.apteka-melissa.pl/blog/artykul/jak-dbac-o-watrobe-dieta-ruch-i-inne-sposoby,1003.html' target='_blank'>Dowiedz się więcej o funkcjach wątroby.</a>",
     correctButton: 0,
     altTxt:
       "Jaki jest najlepszy lek na wątrobę? Regeneracja wątroby co jeść? Dowiedz się więcej na stronie apteki internetowej Melissa.",
@@ -67,7 +67,7 @@ const questions = [
   {
     question: "Fosfolipidy niezbędne przyspieszają regenerację wątroby",
     answer:
-      "Fosfolipidy niezbędne dzięki zawartości polienilofosfatydylocholiny (PPC) mają zdolność do wbudowywania się w uszkodzone fragmenty błon komórkowych, co przyspiesza regenerację wątroby.<sup>1,9</sup> <a href='https://www.apteka-melissa.pl/blog/artykul/fosfolipidy-co-to-i-dlaczego-sa-niezbednie-watrobie,1212.html' target='_blank'>Dowiedz się więcej o fosfolipidach na stronie Apteki Melissa.</a>",
+      "Fosfolipidy niezbędne dzięki zawartości polienilofosfatydylocholiny (PPC) mają zdolność do wbudowywania się w&nbsp;uszkodzone fragmenty błon komórkowych, co przyspiesza regenerację wątroby.<sup>1,9</sup> <a href='https://www.apteka-melissa.pl/blog/artykul/fosfolipidy-co-to-i-dlaczego-sa-niezbednie-watrobie,1212.html' target='_blank'>Dowiedz się więcej o&nbsp;fosfolipidach na stronie Apteki Melissa.</a>",
     correctButton: 0,
     altTxt:
       "Fosfolipidy pomagają w terapii chorób, w toksycznym uszkodzeniu wątroby, wspomagająco w wirusowym zapaleniu wątroby.",
@@ -77,7 +77,7 @@ const questions = [
   {
     question: "Wątroba jest ważna dla układu odpornościowego",
     answer:
-      "Wątroba stanowi „filtr” między jelitami a krążeniem ogólnym, może ona wykrywać i&nbsp;rozkładać bakterie, martwe komórki lub szkodliwe cząstki obce, ponadto wątroba produkuje 80-90% białek niezbędnych dla układu immunologicznego.<sup>10</sup>",
+      "Wątroba stanowi „filtr” między jelitami a&nbsp;krążeniem ogólnym, może ona wykrywać i&nbsp;rozkładać bakterie, martwe komórki lub szkodliwe cząstki obce, ponadto wątroba produkuje 80-90% białek niezbędnych dla układu immunologicznego.<sup>10</sup>",
     correctButton: 0,
     altTxt:
       "Wątroba a odporność? Co na wzmocnienie organizmu? Wątroba pochłania cząsteczki: bakterie, wirusy, pasożyty.",
