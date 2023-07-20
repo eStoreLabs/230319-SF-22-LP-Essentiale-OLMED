@@ -154,12 +154,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
+  /* Avoid Chrome to see Safari hack */
   display: grid;
   place-content: center;
   position: absolute;
   top: 0;
   left: 0;
+}
+@supports (-webkit-touch-callout: none) {
+  #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
+  }
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
