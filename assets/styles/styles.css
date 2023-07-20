@@ -200,7 +200,7 @@ body {
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
     width: unset;
-    height: unset;
+    min-height: unset;
     background-image: none;
   }
   #es-rc #es-rc-content [data-es-rc] .es-navbar {
