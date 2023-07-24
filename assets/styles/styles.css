@@ -155,6 +155,7 @@ body {
   background-size: cover;
   width: 100svw;
   min-height: 100svh;
+  height: calc(var(--vh, 1vh) * 100);
   /* Avoid Chrome to see Safari hack */
   display: grid;
   place-content: center;
