@@ -9,12 +9,9 @@ $es-color--gray: #ebebeb;
     font-family: "Oswald", sans-serif;
     text-align: center;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding: 1rem;
     line-height: 1.2;
-    @media (min-width: 576px) {
-        font-size: 2.1rem;
-    }
 }
 
 @mixin es-button {
