@@ -74,6 +74,7 @@ body {
   opacity: 1;
   width: 70px;
   margin: auto;
+  margin-block: 1rem;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-line {
@@ -249,7 +250,7 @@ body {
   min-height: 230px;
   transform: translate(0, 36%);
   left: 5%;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 0.8rem;
@@ -262,10 +263,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
+  height: 110px;
   width: 200px;
   transform: translate(-50%, 0);
-  bottom: -20%;
+  bottom: -25%;
   scale: 1;
   animation: es-pulse 5s ease 0s infinite normal forwards;
 }
@@ -281,17 +282,17 @@ body {
   top: -1.5em;
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__txt {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  max-width: 90%;
+  font-weight: 500;
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__txt--mobile {
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   padding: 1rem;
   margin: auto;
 }
-@media (min-width: 596px) {
+@media (min-width: 650px) {
   #es-rc #es-rc-content [data-es-rc] .es-mobile-hidden--kv {
     display: block;
   }
@@ -313,7 +314,7 @@ body {
     bottom: -25%;
   }
 }
-@media (min-width: 620px) {
+@media (min-width: 650px) {
   #es-rc #es-rc-content [data-es-rc] .es-kv__Ctn {
     min-height: 520px;
   }
@@ -326,42 +327,33 @@ body {
     height: 140px;
   }
   #es-rc #es-rc-content [data-es-rc] .es-kv__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 750px) {
+  #es-rc #es-rc-content [data-es-rc] .es-kv__overlay::after {
+    bottom: -16%;
+    height: 150px;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross__header {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
   padding-inline: 4rem;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__header {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__header {
     padding-inline: unset;
   }
-}
-#es-rc #es-rc-content [data-es-rc] .es-cross .carousel {
-  padding-block: 1rem;
-  width: 90%;
-  margin: auto;
-}
-#es-rc #es-rc-content [data-es-rc] .es-cross .carousel-inner {
-  width: 50%;
-  margin: auto;
-}
-#es-rc #es-rc-content [data-es-rc] .es-cross .carousel-control-prev-icon {
-  background-image: url("../images/slider-btn.webp");
-}
-#es-rc #es-rc-content [data-es-rc] .es-cross .carousel-control-next-icon {
-  background-image: url("../images/slider-btn.webp");
-  transform: rotate(180deg);
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross__slide {
   display: flex;
@@ -384,10 +376,11 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross__productName {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0;
   line-height: 1.1;
+  line-height: 1;
 }
 @media (min-width: 576px) and (max-width: 674px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__productName {
@@ -405,10 +398,11 @@ body {
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross__productDesc {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 0;
+  margin-block: 0;
+  line-height: 1;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__productDesc {
@@ -428,7 +422,6 @@ body {
   font-style: italic;
   font-weight: 700;
   font-size: 1.3rem;
-  animation: es-pulse--btn 2s infinite;
 }
 #es-rc #es-rc-content [data-es-rc] .es-cross__btn:hover {
   background-color: #FFF;
@@ -455,12 +448,13 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-features__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-features__imgCtn {
@@ -474,8 +468,9 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 0;
@@ -485,7 +480,7 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-features__subtitle {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-features__subtitle:hover {
@@ -571,12 +566,13 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 576px) {
@@ -839,14 +835,15 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
   margin-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-info__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-info__subtitle {
@@ -975,12 +972,13 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-signals__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 576px) {
@@ -1036,12 +1034,13 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-table__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__wrapper {
@@ -1229,12 +1228,13 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-faq__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-faq__accordion-header {
@@ -1294,12 +1294,13 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
+  line-height: 1.3;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-blog__header {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-blog__title {

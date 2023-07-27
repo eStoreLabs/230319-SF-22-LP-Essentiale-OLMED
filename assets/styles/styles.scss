@@ -30,6 +30,7 @@ body {
         opacity: 1;
         width: 70px;
         margin: auto;
+        margin-block: 1rem;
     }
 
     @media (min-width: 576px) {
@@ -251,7 +252,7 @@ body {
             min-height: 230px;
             transform: translate(0, 36%);
             left: 5%;
-            padding: 1rem;
+            padding: 1.5rem 1rem;
             position: relative;
             font-family: "Oswald", sans-serif;
             font-size: 0.8rem;
@@ -264,11 +265,11 @@ body {
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
-                height: 100px;
+                height: 110px;
                 width: 200px;
                 //left: 50%;
                 transform: translate(-50%, 0);
-                bottom: -20%;
+                bottom: -25%;
                 scale: 1;
                 animation: es-pulse 5s ease 0s infinite normal forwards;
             }
@@ -288,12 +289,12 @@ body {
         }
 
         &__txt {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.2;
-            max-width: 90%;
+            font-weight: 500;
 
             &--mobile {
-                font-weight: 700;
+                font-weight: 500;
                 text-align: center;
                 padding: 1rem;
                 margin: auto;
@@ -302,7 +303,7 @@ body {
 
     }
 
-    @media (min-width: 596px) {
+    @media (min-width: 650px) {
         .es-mobile-hidden--kv {
             display: block;
         }
@@ -331,7 +332,7 @@ body {
         }
     }
 
-    @media (min-width: 620px) {
+    @media (min-width: 650px) {
         .es-kv {
             &__Ctn {
                 min-height: 520px;
@@ -349,7 +350,18 @@ body {
             }
 
             &__title {
-                font-size: 2rem;
+                font-size: 2.1rem;
+            }
+        }
+    }
+
+    @media (min-width: 750px) {
+        .es-kv {
+            &__overlay {
+                &::after {
+                    bottom: -16%;
+                    height: 150px;
+                }
             }
         }
     }
@@ -365,25 +377,8 @@ body {
             }
         }
 
-        & .carousel {
-            padding-block: 1rem;
-            width: 90%;
-            margin: auto;
-        }
 
-        & .carousel-inner {
-            width: 50%;
-            margin: auto;
-        }
 
-        & .carousel-control-prev-icon {
-            background-image: url("../images/slider-btn.webp");
-        }
-
-        & .carousel-control-next-icon {
-            background-image: url("../images/slider-btn.webp");
-            transform: rotate(180deg);
-        }
 
         &__slide {
             display: flex;
@@ -409,10 +404,11 @@ body {
 
         &__productName {
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.2rem;
             text-align: center;
             margin-bottom: 0;
             line-height: 1.1;
+            line-height: 1;
 
             @media (min-width: 576px) and (max-width: 674px) {
 
@@ -429,10 +425,11 @@ body {
         }
 
         &__productDesc {
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 0;
+            margin-block: 0;
+            line-height: 1;
 
             @media (min-width: 576px) {
                 font-size: 1.4rem;
@@ -444,7 +441,6 @@ body {
             font-style: italic;
             font-weight: 700;
             font-size: 1.3rem;
-            animation: es-pulse--btn 2s infinite;
 
             @media (min-width: 576px) {
                 font-size: 1.1rem;
