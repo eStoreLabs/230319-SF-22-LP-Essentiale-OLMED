@@ -156,56 +156,93 @@ body {
         .es-kv {
             &__Ctn {
                 background-image: url("../images/kv-bg-desktop.webp");
-                background-size: cover;
-                min-height: 500px;
+                background-size: 100%;
+                min-height: 520px;
             }
 
             &__overlay {
                 min-height: 320px;
                 transform: translate(8%, 15%);
-
-                &::after {
-                    width: 100%;
-                    height: 120px;
-                    bottom: -25%;
-                }
-            }
-        }
-    }
-
-    @media (min-width: 650px) {
-        .es-kv {
-            &__Ctn {
-                min-height: 520px;
-            }
-
-            &__overlay {
                 width: 46%;
                 max-width: 367px;
                 height: 370px;
 
                 &::after {
+                    width: 100%;
                     bottom: -23%;
                     height: 140px;
                 }
             }
+        }
+    }
 
+
+    @media (min-width: 750px) {
+        .es-kv {
+            &__overlay {
+                &::after {
+                    bottom: -27%;
+                }
+            }
             &__title {
                 font-size: 2.23rem;
             }
         }
     }
 
-    @media (min-width: 750px) {
+    @media (min-width: 810px) {
         .es-kv {
+            &__Ctn {
+               margin-bottom: 100px; 
+            }
+            
             &__overlay {
-                &::after {
-                    bottom: -16%;
-                    height: 150px;
-                }
+                transform: translate(19%, 31%);
             }
         }
     }
+    @media (min-width: 950px) {
+        .es-kv {
+            &__Ctn {
+                min-height: 600px;
+            }
+            &__overlay {
+                transform: translate(28%, 39%);
+            }
+        }
+    }
+    @media (min-width: 1050px) {
+        .es-kv {
+            &__overlay {
+                transform: translate(16%, 58%);
+                max-width: 460px;
+                padding: 4rem 2rem;
+            }
+        }
+    }
+    @media (min-width: 1250px) {
+        .es-kv {
+            &__Ctn {
+                min-height: 720px;
+            }
+            &__overlay {
+                transform: translate(23%, 19%);
+                max-width: 539px;
+                height: 596px;
+                &::after {
+                    bottom: -2%;
+                    height: 200px;
+                }
+            }
+            &__title {
+                font-size: 2.8rem;
+            }
+            &__txt {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
 
     .es-cross {
         &__header {
@@ -300,6 +337,7 @@ body {
     .es-quiz {
         margin-top: 50px;
         position: relative;
+
         &::before {
             content: "";
             height: 6px;
@@ -309,54 +347,66 @@ body {
             transform: rotate(-4deg);
             right: 0;
             top: -20px;
+
             @media (min-width: 576px) {
                 width: 35%;
-                transform: rotate(-2deg);
+                transform: rotate(-5deg);
             }
         }
+
         @media (min-width: 576px) {
             &::after {
                 content: "";
-            height: 6px;
-            background-color: $es-color--orange;
-            width: 35%;
-            position: absolute;
-            transform: rotate(-2deg);
-            left: 0;
-            bottom: -20px;
+                height: 6px;
+                background-color: $es-color--orange;
+                width: 35%;
+                position: absolute;
+                transform: rotate(-5deg);
+                left: 0;
+                bottom: -20px;
             }
         }
+
         &__upperBg {
             background-image: url("../images/bg-quiz-mobile-clean.webp");
             background-position: center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
             padding-inline: 1rem;
+            @media (min-width: 576px) {
+                background-image: url("../images/info-quiz-desktop-bg.webp")
+            }
         }
-        // @media (min-width: 576px) {
-        //     background-image: url("../images/bg-quiz-desktop.webp");
-        // }
         .es-line {
             border-top: 3px solid $es-color--orange;
         }
+
         &__title {
             @include es-section-header;
             color: white;
             padding-top: 4rem;
+            @media(min-width: 576px) {
+                padding-top: 7rem;
+            }
         }
+
         &__Ctn {
             padding-bottom: 4rem;
             text-align: center;
+
             @media (min-width: 576px) {
                 text-align: left;
             }
         }
+
         &__subtitle {
             text-align: center;
         }
+
         &__single {
             margin-block: 2rem;
         }
+
         &__role {
             font-weight: 700;
             font-size: 1.8rem;
@@ -364,67 +414,94 @@ body {
             text-transform: uppercase;
             margin-bottom: 0;
             line-height: 1;
+
             @media (min-width: 576px) {
                 margin-bottom: 0.5rem;
             }
         }
+
         &__txt {
             font-size: 1.2rem;
             font-weight: 500;
             line-height: 1.3;
             color: #FFF;
         }
+
         &__lowerBg {
             margin-top: -50px;
         }
     }
-@media (min-width: 576px) {
-    .es-quiz {
-        &__upperBg {
-            padding-inline: unset;
-        }
-        &__subtitle {
-            padding-inline: 2rem;
-        }
-        &__flexCtn {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-        }
-        &__1 {
-            order: 1;
-            padding-inline: 2rem;
-        }
-        &__img--1 {
-            order: 2;
-            img {
-                width: 100%;
+
+    @media (min-width: 576px) {
+        .es-quiz {
+            &__upperBg {
+                padding-inline: unset;
             }
-        }
-        &__3 {
-            order: 4;
-            padding-inline: 2rem;
-        }
-        &__img--2 {
-            order: 3;
-            img {
-                width: 100%;
+
+            &__subtitle {
+                padding-inline: 2rem;
             }
-        }
-        &__liver {
-            position: absolute;
-            img {
-               max-width: 150px;
-               @media (min-width: 800px) {
-                max-width: 200px;
-               }
+
+            &__flexCtn {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &__1 {
+                order: 1;
+                padding-inline: 2rem;
+            }
+
+            &__img--1 {
+                order: 2;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__3 {
+                order: 4;
+                padding-inline: 2rem;
+            }
+
+            &__img--2 {
+                order: 3;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__liver {
+                position: absolute;
+
+                img {
+                    max-width: 150px;
+
+                    @media (min-width: 800px) {
+                        max-width: 200px;
+                    }
+                }
             }
         }
     }
-}
+
+    @media (min-width: 900px) {
+        .es-quiz {
+            &__1 {
+                padding-left: 4rem;
+            }
+
+            &__3 {
+                padding-right: 4rem;
+            }
+        }
+    }
 
     .es-features {
         background-color: $es-color--gray;
