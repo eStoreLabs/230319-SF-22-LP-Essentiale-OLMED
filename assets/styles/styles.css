@@ -104,7 +104,7 @@ body {
   background: #f29602;
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__Ctn {
-  background-image: url("../images/kv-bg-mobile.webp");
+  background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/kv-bg-mobile.webp");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ body {
 }
 #es-rc #es-rc-content [data-es-rc] .es-kv__overlay {
   position: absolute;
-  background-image: url("../images/kv-bg-overlay-clean.webp");
+  background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/kv-bg-overlay-clean.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -132,7 +132,7 @@ body {
   content: "";
   position: absolute;
   max-width: 80%;
-  background-image: url("../images/watroba.webp");
+  background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/watroba.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,7 +173,7 @@ body {
     display: none;
   }
   #es-rc #es-rc-content [data-es-rc] .es-kv__Ctn {
-    background-image: url("../images/kv-bg-desktop.webp");
+    background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/kv-bg-desktop.webp");
     background-size: 100%;
     min-height: 520px;
   }
@@ -374,7 +374,7 @@ body {
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz__upperBg {
-  background-image: url("../images/bg-quiz-mobile-clean.webp");
+  background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/bg-quiz-mobile-clean.webp");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -382,7 +382,7 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-quiz__upperBg {
-    background-image: url("../images/info-quiz-desktop-bg.webp");
+    background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/info-quiz-desktop-bg.webp");
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-quiz .es-line {
@@ -571,7 +571,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   line-height: 1.3;
   color: #FFF;
-  background-image: url("../images/bg.webp");
+  background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -699,7 +699,7 @@ body {
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-features__Ctn {
-    background-image: url("../images/info-watroba.webp");
+    background-image: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230319-SF-22-LP-Essentiale-OLMED/images/info-watroba.webp");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -711,9 +711,7 @@ body {
     font-size: 0.8rem;
   }
 }
-#es-rc #es-rc-content [data-es-rc] .es-faq {
-  /* estrap accordion */
-}
+
 #es-rc #es-rc-content [data-es-rc] .es-faq__title {
   font-family: "Oswald", sans-serif;
   text-align: center;
@@ -726,8 +724,6 @@ body {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-}
-#es-rc #es-rc-content [data-es-rc] .es-faq__accordion-header p {
   margin: 0;
 }
 #es-rc #es-rc-content [data-es-rc] .es-faq .accordion {
