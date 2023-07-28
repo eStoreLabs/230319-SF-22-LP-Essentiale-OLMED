@@ -776,9 +776,7 @@ body {
             --es-rc-accordion-body-padding-y: 0.5rem;
         }
 
-        .accordion-item {
-            cursor: pointer;
-        }
+
 
         .accordion-button {
             color: #FFF;
@@ -788,6 +786,7 @@ body {
             // width: 100%;
             position: relative;
             box-shadow: unset;
+            cursor: pointer;
         }
 
         .accordion-button::after {

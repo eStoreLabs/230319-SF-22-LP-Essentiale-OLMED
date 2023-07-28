@@ -738,9 +738,6 @@ body {
   --es-rc-accordion-inner-border-radius: 0;
   --es-rc-accordion-body-padding-y: 0.5rem;
 }
-#es-rc #es-rc-content [data-es-rc] .es-faq .accordion-item {
-  cursor: pointer;
-}
 #es-rc #es-rc-content [data-es-rc] .es-faq .accordion-button {
   color: #FFF;
   display: block;
@@ -748,6 +745,7 @@ body {
   padding-right: 3.5rem;
   position: relative;
   box-shadow: unset;
+  cursor: pointer;
 }
 #es-rc #es-rc-content [data-es-rc] .es-faq .accordion-button::after {
   content: "+";
